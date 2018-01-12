@@ -10,5 +10,10 @@
    <div style="width:1000px; border:5px solid #ff6600; margin:400px auto; padding:10px; font-family:microsoft yahei; font-weight:bold; font-size:50px; text-align:center;">
     即将进入-----518幼教在线平台
   </div>
+
+  <div class="githubclass">
+    学习进入GitHub
+  </div>
+
 </body>
 </html>
