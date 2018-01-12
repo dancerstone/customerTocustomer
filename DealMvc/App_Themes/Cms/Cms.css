@@ -1,0 +1,86 @@
+﻿@import url('../public/Public.css');
+@import url('icon.css');
+
+body { font-family: 'Microsoft YaHei' , '微软雅黑' , 'NSimSun' , '宋体' ,Arial; }
+a { text-decoration: none; color: #31A9D0; }
+a:hover { color: #D90000; text-decoration: none; }
+
+/*后台主页css*/
+.cms_bj { background-image: url("/App_Themes/Cms/PT/cms_do.png"); background-repeat: no-repeat; }
+.menu { width: 100%; height: 30px; background: url("Images/menubg.jpg"); clear: both; }
+.menua { font-weight: 700; cursor: pointer; width: 89px; height: 33px; margin-top: -3px; margin-left: 6px; float: left; text-align: center; line-height: 34px; color: #FFFFFF; text-decoration: none; }
+.menua:hover { background: url("Images/cmhove.gif"); color: #35A8D5; }
+
+.menua2 { cursor: pointer; width: 89px; height: 33px; margin-top: -3px; margin-left: 6px; float: left; text-align: center; line-height: 34px; text-decoration: none; background: url("Images/cmhove.gif"); color: #35A8D5; font-weight: 700; }
+.menua2:hover { background: url("Images/cmhove.gif"); color: #35A8D5; font-weight: 700; }
+
+.splitbar_collapse_h { cursor: pointer; background-image: url("Images/splitbar_collapse.gif"); width: 4px; background-position: 0 center; background-repeat: no-repeat; }
+.splitbar_collapse_h.hidd { background-color: #3CB0D6; background-position: -4px center; }
+
+.ico3 { width: 16px; height: 14px; background: url("Images/ico3.jpg"); background-repeat: no-repeat; overflow: hidden; }
+.ico2 { width: 16px; height: 14px; background: url("Icon/m_1.gif"); background-repeat: no-repeat; overflow: hidden; }
+.ico1 { width: 16px; height: 14px; background: url("Icon/m_0.gif"); background-repeat: no-repeat; overflow: hidden; }
+
+.cltop { width: 202px; height: 36px; text-align: center; background: url("Images/cltop.jpg"); line-height: 30px; font-size: 14px; font-weight: 700; color: #FFFFFF; }
+.leftMenu { width: 202px; background: url("Images/clcenter.jpg"); }
+.cltob { width: 202px; height: 36px; text-align: center; background: url("Images/cltob.jpg"); }
+.MenuC { position: absolute; top: 6px; left: 3px; width: 20px; height: 20px; }
+
+.ifr_title_now { cursor: default; height: 30px; font-size: 14px; color: #fff; margin: 2px 0 0 4px; font-weight: 700; position: relative; }
+.ifr_title_now .left_bj { width: 4px; height: 4px; background: url("Images/left_top.png"); background-repeat: no-repeat; background-position: top left; overflow: hidden; position: absolute; top: 0px; left: 0px; z-index: 100; }
+.ifr_title_now .right_bj { width: 4px; height: 4px; background: url("Images/right_top.png"); background-repeat: no-repeat; background-position: top right; overflow: hidden; position: absolute; top: 0px; right: 0px; z-index: 101; }
+.ifr_title_now .content_bj { padding: 7px 20px 0 4px; height: 23px; background: #FFFFFF; cursor: pointer; }
+.ifr_title_now .close_bj { display: block; width: 16px; height: 16px; background: url("Icon/no.gif"); background-repeat: no-repeat; background-position: center center; cursor: pointer; position: absolute; top: 7px; right: 2px; z-index: 99; }
+
+.ifr_title { cursor: default; height: 30px; font-size: 14px; /*color: #FFFFFF;*/ margin: 2px 0 0 4px; /*font-weight: 700;*/ font-weight: 400; position: relative; }
+.ifr_title .left_bj { width: 4px; height: 4px; background: url("Images/left_top.png"); background-repeat: no-repeat; background-position: bottom left; overflow: hidden; position: absolute; top: 0px; left: 0px; z-index: 100; }
+.ifr_title .right_bj { width: 4px; height: 4px; background: url("Images/right_top.png"); background-repeat: no-repeat; background-position: bottom right; overflow: hidden; position: absolute; top: 0px; right: 0px; z-index: 101; }
+.ifr_title .content_bj { padding: 7px 4px 0 4px; height: 23px; /*background: #B9E2F0;*/ background: #FFFFFF; cursor: pointer; }
+.ifr_title .close_bj { display: none; }
+
+.reload { background: url("Icon/menurefresh.gif") no-repeat center center; width: 30px; height: 30px; text-align: center; cursor: pointer; }
+
+/*后台主页css -- End */
+
+/*公用css*/
+.table1 { border-top: 1px solid #DDDDDD; }
+.table1 .PageTitle { line-height: 20px; font-weight: 700; font-size: 14px; padding-left: 0; color: #006699; }
+.table1 .PageDetail { line-height: 20px; }
+.table1 .InputDetail { color: #999; margin-left: 0px; }
+.table1 tr { border-bottom: 1px solid #E1E1E1; }
+.table1 tr.hover { background: #F6FAFD; }
+.table1 tr th { border-bottom: 1px solid #E1E1E1; color: #858585; }
+.table1 tr td { border-bottom: 1px solid #E1E1E1; color: #404040; line-height: 28px; }
+.table1 .editHtmlbtn { background: url("Images/EditColumn.gif"); width: 30px; background-repeat: no-repeat; background-position: 5px center; }
+
+/*input[type="text"], input[type="password"], textarea, select { border-width: 1px; border-style: solid; border-color: #CCCCCC #999999 #999999 #CCCCC2; }*/
+
+.w40px { width: 40px; }
+.w80px { width: 80px; }
+.w120px { width: 120px; }
+.w180px { width: 180px; }
+.w450px { width: 450px; }
+.ML10px { margin-left: 10px; }
+
+.TextArea { font-size: 12px; line-height: 18px; width: 680px; border-color: #CCCCCC #999999 #999999 #CCCCC2; border-style: solid; border-width: 1px; }
+.h180 { height: 180px; }
+.h120 { height: 120px; }
+.h80 { height: 80px; }
+.Ber { border-color: #CCCCCC #999999 #999999 #CCCCC2; border-style: solid; border-width: 1px; color: #666666; }
+
+textarea { resize: none; }
+input[type="text"], input[type="password"], textarea { outline-style: none; }
+input, textarea { outline-style: none; }
+
+#GoodsPicDiv { overflow: hidden; margin-bottom: 5px; }
+#GoodsPicDiv li { float: left; margin-right: 3px; background: #fff; overflow: hidden; margin-bottom: 3px; position: relative; }
+#GoodsPicDiv li div.asc, #GoodsPicDiv li div.desc { display: none; width: 13px; height: 13px; position: absolute; top: 0px; cursor: pointer; z-index: 3; }
+
+#GoodsPicDiv li div.asc { left: 0px; background: url("/App_Themes/Cms/Pic/left.gif") no-repeat; float: left; }
+#GoodsPicDiv li div.desc { right: 0px; background: url("/App_Themes/Cms/Pic/right.gif") no-repeat; float: right; }
+#GoodsPicDiv li div.imgDiv { cursor: pointer; vertical-align: middle; display: table-cell; width: 102px; height: 102px; overflow: hidden; border: 1px dotted #ccc; text-align: center; }
+#GoodsPicDiv li div.imgDiv.hover { border: 1px solid #f30; }
+#GoodsPicDiv li div.imgDiv img { margin-top: expression(50-this.height/2); max-height: 100px; border: 0px none; }
+
+#GoodsPicDiv li .gpicdelete { cursor: pointer; border: 1px solid #ccc; border-top: none; text-align: center; background: #f2f2f2; height: 35px; line-height: 35px; }
+

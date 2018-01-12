@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*登录框样式-开始*/
+#btn_submit{ display:none;}
+#AllDesk{width: 100%; height: 100%; position: absolute; z-index: 1004; top:0px; background-color: #000000;opacity: 0.15;filter:alpha(opacity=15);}
+#dragDiv{position:absolute; z-index:1098; background-color:#2b2b2b;border:2px solid #4e4e4a;width:470px; height:auto;left:10px;top:10px;filter:alpha(opacity=100);opacity:1; font-size:12px; margin:0px auto;border-radius:9px;}
+
+#dragDiv .form{overflow:hidden;}
+#dragDiv li{height:70px; overflow:hidden;padding-left: 48px;}
+#dragDiv .input1{background: url(/App_Themes/UI/image/input3.png) left top no-repeat; height: 50px; line-height: 50px; width: 300px; text-indent: 15px; font-size: 14px; color: #666;}
+#dragDiv .input2{width:80px; height:36px; line-height:36px; margin-right:10px; padding:0 10px;background:#fff; font-size:14px; border:1px solid #ccc; border-radius: 4px;}
+#dragDiv .input2::selection{border:1px solid #f0f; border-radius: 4px;}
+#dragDiv .li_01{ border-bottom:1px solid #a40000; height:40px; margin-bottom:16px; padding-right:15px; font-family:微软雅黑;}
+#dragDiv .li_02{height:28px; position:relative; top:-5px; line-height:28px;}
+#dragDiv .li_02 input{float:left; position:relative; left:-2px; top:-2px;}
+#dragDiv .li_02 input[type='checkbox']{ margin-top:10px;}
+#dragDiv .btn1{ color:#fff; background:#a40000; font-size:16px; cursor:pointer;border-radius:5px; padding:10px 49px;}
+#dragDiv .btn2{background:#4a4a4a;}
+#dragDiv .spanLogin{ width:80px; text-align:right;}
+#dragDiv label{cursor:pointer;}
+/**/
+#dragDiv .msg{height:38px; padding-top:20px; overflow:hidden; text-align:center; background:#fff url(/App_Themes/Public/Login/lline1.gif) left top repeat-x;}
+#dragDiv .msg a{padding-right:10px; color:#0077cc;}
+#dragDiv .msg img{position:relative; top:3px; margin-right:3px;}
+#dragDiv strong{padding:11px 22px; font-size:14px; font-weight:bold; font-family:微软雅黑; color:#FFFFFF; background:#a40000; background-repeat:repeat-x; background-position:6px; float:left; }
+/*登录框样式-结束*/

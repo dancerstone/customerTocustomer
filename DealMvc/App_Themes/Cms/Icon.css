@@ -1,0 +1,26 @@
+﻿@import url('/App_Themes/Cms/Icon/XshopIco.css');
+
+.Icon { background-repeat: no-repeat; padding: 2px 0px 2px 22px; background-position: left center; }
+.leftMenu p:hover { background-image: url(Icon/phover.gif); background-repeat: no-repeat; background-position: 22px center; }
+
+/*列表--管理*/
+.Icon1 { background-image: url(Icon/itemItem.gif); }
+/*新增--编辑*/
+.IconA { background-image: url(Icon/itemA.gif); }
+/*编辑*/
+.IconE { background-image: url(Icon/itemE.gif); }
+
+/*全部选定*/
+.XshopCheckAll { background: url("Icon/checkall.gif") no-repeat left center; padding-left: 18px; }
+/*删除选定*/
+.XshopDelCheck { background: url("Icon/checkremove.gif") no-repeat left center; padding-left: 15px; }
+
+/*反向选择*/
+.XshopReverseCheck { background: url("Icon/checkredo.gif") no-repeat; padding-left: 16px; background-position: -3px -3px; }
+
+/*特殊按钮*/
+.SmallButton { display: inline-table; display: -moz-inline-box; display: inline-block; margin: 1px; border-style: solid; border-width: 1px; border-color: #999999; border-top-color: #cccccc; border-left-color: #cccccc; background-color: #eeeeee; color: #333333; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%; white-space: nowrap; height: 21px; line-height: 21px; padding: 0 3px; margin-top: 5px; }
+.SmallButton:link { text-decoration: none; color: #333333; background-color: #eeeeee; }
+.SmallButton:visited { text-decoration: none; color: #333333; background-color: #eeeeee; }
+.SmallButton:active { text-decoration: none; color: #333333; }
+.SmallButton:hover { text-decoration: underline; color: #333333; background-color: #dddddd; }

@@ -1,0 +1,16 @@
+﻿
+------------------------
+open.weibo.com
+接口帐号：
+loginapi@sina.com
+lenovo 
+
+-------------------------
+weibo.com
+测试帐号：
+logindemo@sina.com
+lenovo
+
+
+650648764
+a4072e80413256722555c57a4cae53e7

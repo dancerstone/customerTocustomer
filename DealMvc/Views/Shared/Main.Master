@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <%Html.RenderPartial("~/Views/Shared/Base/head.ascx"); %>
+    <%Html.RenderPartial("~/Views/Shared/Base/cate.ascx"); %>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <%Html.RenderPartial("~/Views/Shared/Base/foot.ascx"); %>
+</asp:Content>

@@ -1,0 +1,97 @@
+﻿.MemberCover { padding-top: 50px; background-image: url('/App_Themes/images/20150310_02.png'); width: 100%; background-size: 100%; }
+.MemberCover li { text-align: center; }
+.MemberCover li.headpic { padding: 3% 0; }
+.MemberCover li.headpic img { width: 104px; height: 104px; border-radius: 100px; }
+.MemberCover li.mName { height: 30px; }
+
+.MemberContent { width: 100%; background-color: #191919; }
+.MemberContent li { width: 100%; margin-bottom: 1px; color: #999; line-height: 50px; background: #2b2b2b url(/App_Themes/images/20150310_28.png) no-repeat right center; background-position-x: 95%; background-size: 2%; }
+.MemberContent li .left_img { width: 4.5%; vertical-align: middle; padding: 0px 4%; }
+.MemberContent .div { padding: 20px 0px; }
+.MemberContent .div .safeOut { width: 90%; height: 45px; text-align: center; color: #fff; line-height: 45px; background-color: #9a0000; border-radius: 5px; margin: 0px 5%; }
+.MemberContent .div .safeOut a { color: #fff; }
+.btn_order_model { background: #990000; color: #fff; padding: 2% 4%; border-radius: 3px; margin-right: 5%; float: left; }
+.btn_order_model a { color: #fff; }
+
+
+/*我的订单*/
+.orderContent { padding-top: 50px; background-color: #191919; padding-bottom: 5%; }
+.orderContent .searchDiv { background-color: #2b2b2b; border-top: 1px solid #191919; }
+.orderContent .searchDiv .statusDiv { color: #ccc; width: 33%; text-align: right; padding-top: 4%; }
+.orderContent .searchDiv .statusDiv img { vertical-align: middle; width: 10%; margin-left: 5%; }
+.orderContent .searchDiv select { border: 0px; background: #2b2b2b; color: #ccc; font-size: 14px; background: url(/App_Themes/images/img_select_down.png) no-repeat #2b2b2b 100%; width: 70%; }
+.orderContent .searchDiv .speatorDiv { width: 25%; text-align: center; }
+.orderContent .searchDiv .timeDiv { color: #ccc; width: 33%; text-align: left; padding-top: 4%; }
+.orderContent .searchDiv .timeDiv img { vertical-align: middle; width: 10%; margin-left: 5%; }
+
+.orderContent .orderList li { background-color: #2b2b2b; }
+.orderContent .orderList .title { color: #ccc; padding: 5% 3%; border-bottom: 1px solid #191919; }
+.orderContent .orderList .title .status { font-size: 22px; }
+.orderContent .orderList .title .orderNum { color: #999; }
+.orderContent .orderList .title .orderNum img { vertical-align: middle; width: 12%; margin-left: 4%; }
+
+.orderContent .orderList .logistics { padding: 2% 4% 0 4%; color: #ccc; }
+.orderContent .orderList .logistics .inDiv { border-bottom: 1px solid #191919; }
+.orderContent .orderList .logistics .inDiv .left { width: 80%; padding-bottom: 5%; }
+.orderContent .orderList .logistics .inDiv .left .time { color: #999; display: block; padding: 3% 0; }
+.orderContent .orderList .logistics .inDiv .left .logistics_type { color: #ff6600; }
+.orderContent .orderList .logistics .inDiv .right { width: 15%; text-align: right; padding: 5% 0 0 0; }
+
+.orderContent .orderList .content { padding: 2% 4% 0 4%; }
+.orderContent .orderList .content .top { color: #676767; padding-bottom: 3%; border-bottom: 1px solid #191919; }
+.orderContent .orderList .content .top .img { width: 30%; text-align: center; padding-right: 3%; }
+.orderContent .orderList .content .top .img img { width: 100%; }
+.orderContent .orderList .content .top .right { width: 55%; }
+.orderContent .orderList .content .top .right .title { line-height: 20px; color: #ccc; border-bottom: none; padding: 0; }
+.orderContent .orderList .content .top .right .other { line-height: 24px; padding: 3% 0; }
+.orderContent .orderList .content .top .right .other .color { }
+.orderContent .orderList .content .top .right .other .num img { margin-left: 3%; vertical-align: sub; width: 8%; }
+
+.orderContent .orderList .content .top .bottomImg { width: 10%; text-align: right; margin-top: 0px; }
+
+.orderContent .orderList .result { color: #ccc; padding: 4%; border-bottom: 10px solid #191919; }
+
+
+
+/*下单页面*/
+.sureOrder { width: 100%; background-color: #2b2b2b; padding-top: 50px; }
+.sureOrder .goodsInfo { padding: 5%; }
+.sureOrder .goodsInfo .img { width: 20%; }
+.sureOrder .goodsInfo .img img { width: 100%; }
+.sureOrder .goodsInfo .name { color: #ccc; padding: 4%; width: 40%; }
+.sureOrder .goodsInfo .price { color: #ccc; padding: 4%; width: 20%; }
+.sureOrder .goodsInfo .price span { display: block; color: #676677; }
+.sureOrder .addressInfo, .payStyle, .invoiceInfo, .freightInfo { padding: 4%; color: #ccc; }
+
+
+.sureOrder .ad_left { width: 70%; }
+.sureOrder .ad_left .top { padding: 4% 0; }
+.sureOrder .ad_left .top .name { width: 40%; }
+.sureOrder .ad_left .bottom { color: #676767; }
+
+.sureOrder .ad_right { margin-top: 4%; }
+
+
+.sureOrder .OrderResult { width: 100%; padding: 5% 4%; background-color: #2b2b2b; border-bottom: 1px solid #191919; position: fixed; bottom: 0px; }
+.sureOrder .OrderResult .allcount { color: #ccc; width: 55%; font-size: 18px; padding: 4% 0; }
+.sureOrder .OrderResult .btn { width: 40%; }
+.sureOrder .OrderResult .btn .btn_submit { color: #fff; background-color: #9a0000; border-radius: 5px; text-align: center; padding: 10% 0; }
+
+
+
+/*会员资料*/
+.MemberInfoContent { padding-top: 50px; background-color: #191919; }
+.MemberInfoContent .MemberInfo li { background-color: #2b2b2b; padding: 3% 5%; color: #ccc; border-bottom: 1px solid #191919; }
+.MemberInfoContent .MemberInfo li input { border: none; background-color: #2b2b2b; color: #ccc; font-size: 14px; }
+.MemberInfoContent .MemberInfo li select { border: none; background-color: #2b2b2b; color: #ccc; }
+
+/*修改登录密码*/
+
+.UpdateLoginPwdContent { padding-top: 50px; background-color: #191919; }
+.UpdateLoginPwdContent li { width: 100%; text-align: center; padding: 2% 0; }
+.UpdateLoginPwdContent li input { width: 80%; border: none; background-color: #2b2b2b; padding: 4%; border-radius: 5px; color: #ccc; }
+.UpdateLoginPwdContent .btnDiv { width: 100%; text-align: center; padding: 5% 0; }
+.UpdateLoginPwdContent .btnDiv .btn_submit { width: 88%; background-color: #9a0000; border: none; border-radius: 5px; color: #fff; padding: 4% 0; }
+
+
+.m_no_model{color:#fff; margin:15% auto; text-align:center;  }

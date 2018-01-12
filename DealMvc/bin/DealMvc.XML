@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealMvc</name>
+    </assembly>
+    <members>
+        <member name="T:DealMvc._Default">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc._Default.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DealMvc.Controllers.CmsSiteController.b_BLL_SiteInfo">
+            <summary>
+            实例化 网站配置信息业务逻辑
+            </summary>
+        </member>
+        <member name="F:DealMvc.Controllers.CmsSiteController.b_BLL_SiteEmail">
+            <summary>
+            实例化 网站邮箱配置业务逻辑
+            </summary>
+        </member>
+        <member name="F:DealMvc.Controllers.CmsSiteController.b_BLL_SiteUpLoad">
+            <summary>
+            实例化 网站上传信息业务逻辑
+            </summary>
+        </member>
+        <member name="F:DealMvc.Controllers.CmsSiteController.b_BLL_SiteMessage">
+            <summary>
+            实例化 网站短信配置业务逻辑
+            </summary>
+        </member>
+        <member name="F:DealMvc.Controllers.CmsSiteController.b_BLL_SitePayAPI">
+            <summary>
+            实例化 网站支付信息业务逻辑
+            </summary>
+        </member>
+        <member name="F:DealMvc.Controllers.CmsSiteController.b_BLL_PointsSet">
+            <summary>
+            实例化 积分设置业务逻辑
+            </summary>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsSiteController.SiteBase(DealMvc.Model.SiteInfo)">
+            <summary>
+            网站基本信息设置
+            </summary>
+            <param name="p_si"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsSiteController.EmailBase(DealMvc.Model.SiteEmail)">
+            <summary>
+            邮箱信息设置
+            </summary>
+            <param name="smtp"></param>
+            <param name="emailname"></param>
+            <param name="email"></param>
+            <param name="emailpwd"></param>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsSiteController.MessageBase(DealMvc.Model.SiteMessage)">
+            <summary>
+            短信设置
+            </summary>
+            <param name="UploadFolder"></param>
+            <param name="UploadExtension"></param>
+            <param name="UploadSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsSiteController.AlipayBase(DealMvc.Model.SitePayAPI)">
+            <summary>
+            支付宝信息设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsSiteController.TenpayBase(DealMvc.Model.SitePayAPI)">
+            <summary>
+            网银在线设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Controllers.Comm.CommController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Controllers.Comm.CommController.GetSiteCityList(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            获取城市信息
+            </summary>
+            <param name="Value"></param>
+            <param name="Level"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:DealMvc.Controllers.Comm.CommController.GetNextCitys(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            获取城市下级分类
+            </summary>
+            <param name="topid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.Comm.CommController.UpGPic(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.Comm.CommController.TypeChange(System.String)">
+            <summary>
+            快递类型转换
+            </summary>
+            <param name="typeCom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.Comm.CommController.KuaiDiAPINoVali(System.String,System.String)">
+            <summary>
+            返回运单详情
+            </summary>
+            <param name="typeCom">快递公司</param>
+            <param name="nu">运单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.Comm.CommController.GetHelpCate(System.Nullable{System.Int32})">
+            <summary>
+            获取帮助分类
+            </summary>
+            <param name="topid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Ajax">
+            <summary>
+            Ajax 的摘要说明
+            </summary>
+        </member>
+        <member name="F:DealMvc.Ajax.temppath">
+            <summary>
+            临时目录
+            </summary>
+        </member>
+        <member name="F:DealMvc.Ajax.path">
+            <summary>
+            保存文件目录
+            </summary>
+        </member>
+        <member name="M:DealMvc.Ajax.DealAjax(System.String,System.String)">
+            <summary>
+            处理程序
+            </summary>
+            <param name="AjaxSign">区分参数</param>
+            <param name="path">文件地址</param>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsAdminController.GetAdminPowerValues(System.Nullable{System.Int32})">
+            <summary>
+            获取帐号类型的权限值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.MvcApplication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.MvcApplication.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            
+            </summary>
+            <param name="routes"></param>
+        </member>
+        <member name="M:DealMvc.MvcApplication.Application_Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.MvcApplication.Application_BeginRequest(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealMvc.Controllers.HomeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Controllers.HomeController.Index">
+            <summary>
+            网站首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.VerifyCodeImage">
+            <summary>
+            VerifyCodeImage 的摘要说明
+            </summary>
+        </member>
+        <member name="M:DealMvc.VerifyCodeImage.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="P:DealMvc.VerifyCodeImage.IsReusable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:DealMvc.Controllers.CmsController">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsController.Index(System.String,System.String,System.String)">
+            <summary>
+            后台登陆页面
+            </summary>
+            <param name="username"></param>
+            <param name="userpwd"></param>
+            <param name="usercode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsController.Do">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsController.Logout">
+            <summary>
+            注销
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsController.NoAuthorize">
+            <summary>
+            没有权限提示页面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Controllers.CmsController.ClearWebCache">
+            <summary>
+            清空所有的数据缓存
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

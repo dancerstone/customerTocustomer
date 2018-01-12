@@ -1,0 +1,9 @@
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.ExceptionEx\bin\Debug\DealMvc.ExceptionEx.dll
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.ExceptionEx\bin\Debug\DealMvc.ExceptionEx.pdb
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.ExceptionEx\obj\Debug\DealMvc.ExceptionEx.dll
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.ExceptionEx\obj\Debug\DealMvc.ExceptionEx.pdb
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.ExceptionEx\obj\Debug\DealMvc.ExceptionEx.csprojResolveAssemblyReference.cache
+F:\金蒙早教\DealMvc.ExceptionEx\bin\Debug\DealMvc.ExceptionEx.dll
+F:\金蒙早教\DealMvc.ExceptionEx\bin\Debug\DealMvc.ExceptionEx.pdb
+F:\金蒙早教\DealMvc.ExceptionEx\obj\Debug\DealMvc.ExceptionEx.dll
+F:\金蒙早教\DealMvc.ExceptionEx\obj\Debug\DealMvc.ExceptionEx.pdb

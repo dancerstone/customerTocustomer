@@ -1,0 +1,30 @@
+﻿.da_content { width: 100%; padding-top: 50px; background-color: #191919; padding-bottom: 10%; }
+.da_content .baseInfo { background-color: #2b2b2b; color: #999; }
+.da_content .baseInfo li { padding: 2% 5%; }
+.da_content .baseInfo .div { height: 55px; line-height: 55px; border-bottom: 1px solid #191919; font-size: 16px; }
+.da_content .baseInfo .div input { border: none; background-color: #2b2b2b; padding: 5px; color: #fff; width: 65%; font-size: 16px; }
+.da_content .baseInfo .areali { /*background: url(/App_Themes/images/20150310_28.png) no-repeat right center;*/ background-size: 3%; background-position-x: 90%; }
+.da_content .baseInfo li select {  width:25%;border: none; background-color: #2b2b2b; color: #ccc; }
+.da_content .defaultInfo { background-color: #2b2b2b; color: #999; }
+.da_content .defaultInfo li { padding: 2% 5%; }
+.da_content .defaultInfo .div { height: 55px; line-height: 55px; border-bottom: 1px solid #191919; font-size: 16px; }
+.da_content .defaultInfo .div input { border: none; background-color: #2b2b2b; padding: 5px; color: #fff; width: 70%; font-size: 16px; }
+
+.da_content .defaultInfo .fr img { width: 75%; margin: 10% 0; }
+.da_content .deleteAddress { /*background: url(/App_Themes/images/img_delete.png) no-repeat 23% center; */ background-color: #9A0000; width: 90%; border-radius: 5px; margin: 10% auto; color: #fff; text-align: center; font-size: 18px; padding: 4% 0; }
+.da_content .deleteAddress img { vertical-align: middle; width: 7%; margin-right: 3%; }
+
+
+.adWal { width: 100%; background-color: #191919; padding-top: 50px; }
+.adWal .btn { padding: 8% 0 5% 0; }
+.adWal .btn .addNew { /*background: url(/App_Themes/images/img_ad_bg.png) no-repeat 20% center;*/ width: 80%; background-color: #9a0000; color: #fff; padding: 4%; text-align: center; font-size: 22px; border-radius: 5px; margin: 0 auto; }
+.adWal .btn .addNew img { vertical-align: middle; margin-right: 3%; }
+.adWal .btn .addNew a { color: #fff; }
+.adWal .adList li { border-bottom: 1px solid #191919; background-color: #2b2b2b; padding: 0 5%; }
+.adWal .adList li .ad_left { width: 60%; }
+.adWal .adList .ad_left .top { color: #ccc; padding: 10% 0; }
+.adWal .adList .ad_left .top .name{margin-right:10%;}
+.adWal .adList .ad_left .bottom { color: #676767; padding: 5% 0 10% 0; }
+
+.adWal .adList li .ad_right { width: 30%; margin-top: 10%; }
+.adWal .adList li .ad_right img { width: 70%; margin-right: 3%; }

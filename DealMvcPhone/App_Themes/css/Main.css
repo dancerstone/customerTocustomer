@@ -1,0 +1,280 @@
+﻿body { font-size: 14px; padding: 0px; margin: 0px; background: #2b2b2b; }
+*{-moz-appearance:caret;-webkit-appearance:none;}
+a { color: #999; text-decoration: none; outline: none; }
+a:active { star: expression(this.onFocus=this.blur()); }
+img { border: 0px; cursor: pointer; }
+a:link { text-decoration: none; outline: none; }
+a:visited { text-decoration: none; outline: none; }
+/*a:hover { text-decoration: none; color: #fff; outline: none; }*/
+ul, p, dl, dt, dd { padding: 0px; margin: 0px; }
+li { list-style-position: outside; list-style-type: none; }
+h1, h2, h3, h4, h5 { font-size: 14px; padding: 0px; margin: 0px; }
+h1 { font-size: 16px; }
+h5 { font-size: 12px; }
+.fl { float: left; }
+.fr { float: right; }
+.hide { display: none; }
+.clear_f { clear: both; height: 0px; padding: 0px; margin: 0px; display: block; _display: inherit; }
+
+.h3 { height: 3px;background-color: #191919; }
+.h7 { width: 100%; height: 7px; background-color: #191919; }
+.h15{height:15px;background-color:#191919;}
+
+/*顶部*/
+
+.PhoneTop { background: #2b2b2b; position: fixed; left: 0px; top: 0px; height: 50px; width: 100%; }
+.PhoneTop .logo { margin-top: 13px; margin-left: 10px; width:15%; }
+.PhoneTop .logo img { height: 23px; }
+.PhoneTop .title_M { float: left; font-size: 24px; color: #fff; line-height: 50px; width:60%; text-align:center; }
+.PhoneTop .other {width:21%;}
+.PhoneTop .other li { float: left; margin-top: 13px; margin-right:3%; margin-right:12%; }
+.PhoneTop .other li img { height: 23px; }
+
+.PhoneTop2 { position: fixed; left: 0px; top: 0px; height: 50px; line-height: 50px; text-align: center; color: #FFF; background-color: #2B2B2B; width: 100%; }
+.PhoneTop2 h1 { font-size: 24px; font-weight: bold; padding: 0px; margin: 0px; }
+.PhoneTop2 .btnL { float: left; height: 50px; line-height: 50px; min-width: 50px; position: absolute; left: 0px; top: 0px; }
+.PhoneTop2 .btnL img { height: 25px; margin-top: 12px; }
+.PhoneTop2 .btnR { float: right; height: 50px; line-height: 50px; min-width: 50px; position: absolute; right: 0px; top: 0px; }
+.PhoneTop2 .btnR img { height: 25px; margin-top: 12px; }
+
+
+
+/*内容部*/
+.PhoneWal { padding-top: 50px; background: #191919; }
+.PhoneWalOrder { padding-top: 50px; background: #2b2b2b; }
+
+/*底部*/
+.PhoneBottom { width: 100%; background-color: #3b3b3b; color: #999; height: 100%; text-align: center;  line-height: 30px;  }
+.BPBottom { width: 100%; background-color: #3b3b3b; color: #999; height: 60px; text-align: center;  line-height: 30px;  position:fixed; bottom:0px; padding:3% 0;}
+.h60px{height:60px;}
+
+
+
+
+
+/*产品列表页*/
+.PhoneWal .p_list { width: 100%; margin-top:2%; }
+.PhoneWal .p_list li { float: left; width: 48%;  margin:1% 1%;}
+.PhoneWal .p_list li .p_img { width:100%; }
+.PhoneWal .p_list li .p_img img {width:100%; }
+.PhoneWal .p_list li .p_title { background: #333333; width:100%;  }
+.PhoneWal .p_list li .p_title .p_n { float: left;  color:#fff; font-weight:bold; margin:4%; width:70%;}
+.PhoneWal .p_list li .p_title .p_n span { color: #7e7e7e; margin-top:1%; }
+.PhoneWal .p_list li .p_title .p_c { float: right; width:20%;  margin:4% 0px;;}
+.PhoneWal .p_list li .p_title .p_c img{ width:90%; }
+.p_more { background: #222; text-align: center; width: 98%; margin: 5px auto; padding: 5% 0px; cursor:pointer; }
+
+
+
+/*产品详情页*/
+.PhoneWal .p_i{ width:100%;}
+.PhoneWal .p_i img{width:100%;}
+.PhoneWal .p_ii{width:100%;}
+.PhoneWal .p_ii .p_t{ margin:2%; color:#fff; font-weight:bold;}
+.PhoneWal .p_ii .p_p{margin:2%;  color:#95151f;font-weight:bold;}
+.PhoneWal .p_ii .p_car{ margin:2%; background:#a80c17; border-radius:5px; color:#fff;padding:4% 25% 4% 35%; }
+.PhoneWal .p_ii .p_car span.gwc{ margin-right:5%;}
+.PhoneWal .p_ii .p_car img{height:18px;}
+.PhoneWal .p_iii{}
+.PhoneWal .p_iii .d_1{ border-bottom:2px solid #a80c17; color:#fff; font-weight:bold; margin-top:10%; padding:2%;}
+.PhoneWal .p_iii .d_2{ width:100%;}
+.PhoneWal .p_iii .d_2 img{width:100%;}
+
+
+
+
+
+/*3D体验馆*/
+.PhoneWal .T_I{ background:#2b2b2b;margin-top:2px;}
+.PhoneWal .T_I li{ width:49.8%;  float:left; color:#959595;  padding:2% 0px;}
+.PhoneWal .T_I li.aNow{ border-bottom:4px solid #333333; color:#fff;}
+.PhoneWal .T_I li.aNow .p_t_i{ float:left; padding-left:18%;opacity:1}
+.PhoneWal .T_I li.aNow a{color:#fff;}
+.PhoneWal .T_I li .p_t_i{ float:left; padding-left:18%;opacity:0.6}
+.PhoneWal .T_I li .p_t_i img{ height:40px; }
+.PhoneWal .T_I li .p_t_t{float:left; margin:5% 0 0 3%;}
+.PhoneWal .T_I li .p_r_b{border-right:1px solid #393939; width:1px; float:right; height:40px;}
+.PhoneWal .T_II{margin-top:1%;}
+.PhoneWal .T_II li{ float:left; width: 48%;  margin:1% 1%;}
+.PhoneWal .T_II li img{ width:100%;}
+
+
+/*电子杂志*/
+
+.Magazine{width:100%;padding-top:50px;background-color:#191919;}
+.Magazine .m_title{color: #999;text-align: center;font-size: 22px;margin: 15% 0 10% 0;}
+.Magazine .m_content{text-align:center;}
+.Magazine .m_content img{width: 70%;border: 20px solid #2b2b2b;border-radius: 10px;}
+.Magazine .m_foot{text-align: center;color: #999;line-height: 70px;height: 150px;}
+
+
+
+
+/*设计师专区*/
+
+.PhoneWal  .d_w_t{ width:100%;}
+.PhoneWal  .d_w_t li{ width:95%; margin:3% auto;position:relative;}
+.PhoneWal  .d_w_t li img{ width:100%;}
+.PhoneWal  .d_w_t li p{ position: absolute;right: -6%;top: 15%;color: #ccc;width: 50%;text-align: left; }
+
+/*购物车*/
+
+.CarWal { width: 100%; background-color: #191919; padding-top: 50px; }
+.CarWal .CarList li { margin-bottom: 7px; padding: 3% 0 0 0; color: #676767; background-color: #2b2b2b; }
+.CarWal .CarList li .li_left { width: 20px; height:20px; text-align: center;   margin:8% 0px 0px 4%;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat; }
+.CarWal .CarList li .checkin{background:url(/App_Themes/images/img_car_check.png) no-repeat;}
+.CarWal .CarList li .li_left img { width: 50%; }
+.CarWal .CarList li .li_right { width: 80%; }
+.CarWal .CarList li .li_right .top { padding-bottom: 3%; border-bottom: 1px solid #191919; }
+.CarWal .CarList li .li_right .top .img { width: 35%; text-align: center; }
+.CarWal .CarList li .li_right .top .img img { width: 80%; }
+.CarWal .CarList li .li_right .top .right { width: 60%; }
+.CarWal .CarList li .li_right .top .right .title { line-height: 20px; color: #ccc; }
+.CarWal .CarList li .li_right .top .right .other { line-height: 24px; padding: 3% 0; }
+.CarWal .CarList li .li_right .top .right .other .color { }
+.CarWal .CarList li .li_right .top .right .other .num img { margin-left: 3%; vertical-align: sub; width: 8%; }
+.CarWal .CarList li .li_right .bottom { line-height: 40px; color: #ccc; }
+.CarResult { color: #fff; background-color: #000; border-bottom: 1px solid #191919; padding: 0 0; }
+.CarResult .img { width: 20px; height:20px; text-align: center;margin:6% 3% 0 5%;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat; }
+.CarResult .allin_check{background:url(/App_Themes/images/img_car_check.png) no-repeat;}
+.CarResult .img img { width: 60%; }
+.CarResult .allcount { width: 60%; font-size: 20px;margin-top:5%; text-align:left; }
+.CarResult .btn { width: 20%; margin-top:5%; }
+.CarResult .btn_submit { background-color: #9a0000; color: #fff; text-align: center; width: 80%;  border-radius: 5px; }
+.KLI{text-align:center; padding:50% 0; line-height:30px;}
+.K_I_V{}
+.K_I_V img{ width:17%;}
+.K_I_T{}
+
+
+
+
+/*弹出框*/
+.Layer1 { position: absolute; position: fixed; _position: absolute; width: 100%; z-index: 10000; top: 0; left: 0px; background-color: #000; display: none; }
+.RechargeLayer { position: absolute; z-index: 10001; width: 300px; overflow: hidden; font-size: 14px; display: none;border-radius:5px; }
+.RechargeLayerFixed { position: fixed;}
+.RechargeLayer .title { height: 40px; line-height: 41px; overflow: hidden; text-align: center; background: #990000; font-size: 15px; color: #FFF; }
+.RechargeLayer .form { padding: 5px; height: auto; overflow: hidden; background: #FFF; position: relative; }
+.RechargeLayer .form .r_t_i{ margin:10%; text-align:center;}
+.RechargeLayer .form .r_t_i .ti_tt{ float:left; margin:5px;}
+.RechargeLayer .form .r_t_i .ti_tc{ float:left;}
+.RechargeLayer .form .r_t_i .ti_tc .cut_b{ float:left;margin-top:4px;background:url(/App_Themes/images/cut_b.png) no-repeat;width:20px; height:20px; }
+.RechargeLayer .form .r_t_i .ti_tc .input_b{ float:left;}
+.RechargeLayer .form .r_t_i .ti_tc .input_b .car_input{ border:1px solid #999; width:70px; height:23px; line-height:23px; text-align:center; margin:0px 10px; }
+.RechargeLayer .form .r_t_i .ti_tc .add_b{ float:left;background:url(/App_Themes/images/add_b.jpg) no-repeat;margin-top:4px; width:20px; height:20px;}
+.RechargeLayer .form .r_t_b{ text-align:center;}
+.RechargeLayer .form .r_t_b .sure_btn_c{ background:#990000; color:#fff; border:0px;border-radius:3px; padding:5px 15px;}
+.RechargeLayer .form .address_list{ padding:5% 4px;}
+.RechargeLayer .form .address_list li{ margin:10px 0px;}
+.RechargeLayer .form .address_list li .check_m{ float:left;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat;  width:20px; height:20px; margin:5px 9px 0px 0px;}
+.RechargeLayer .form .address_list li .checkin{background:url(/App_Themes/images/img_car_check.png) no-repeat; }
+.RechargeLayer .form .address_list li .a_list_m{ float:left; line-height:22px; width:250px;}
+.RechargeLayer .form .pay_send_list{ padding:5%;}
+.RechargeLayer .form .pay_send_list .pay_m_model{}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_i_m{}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m{ margin:5%;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li{ margin-bottom:5px;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .check_m{float:left;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat;  width:20px; height:20px; margin:5px 9px 0px 0px;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .checkin{background:url(/App_Themes/images/img_car_check.png) no-repeat; }
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .a_list_m{ float:left; margin:7px 0px 0px 0px;}
+
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .dj_list_m{ float:left; font-size:10px; line-height:30px;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .dj_list_m .dj_name_m{ float:left;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .dj_list_m .dj_style_m{ float:left;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .dj_list_m .dj_style_m .dj_p_m{ float:left; margin-right:10px;}
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .dj_list_m .dj_style_m .dj_p_m .check_m{float:left;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat;  width:20px; height:20px; }
+.RechargeLayer .form .pay_send_list .pay_m_model .pay_ii_m li .dj_list_m .dj_style_m .dj_p_m .checkin{background:url(/App_Themes/images/img_car_check.png) no-repeat;}
+ .pay_m_model .pay_ii_m li .dj_list_m .dj_style_m .dj_p_m .check_t{float:left; }
+
+.RechargeLayer .form .invioices_list{padding:5%;}
+.RechargeLayer .form .invioices_list .I_I_m_p{ margin:5%;}
+.RechargeLayer .form .invioices_list .I_I_m_p .p_m_t_I{ float:left;}
+.RechargeLayer .form .invioices_list .I_I_m_p .p_m_tt_I{ float:left; line-height:21px;}
+.RechargeLayer .form .invioices_list .I_I_m_p .p_m_tt_I .child_m{ float:left; margin-right:15px;}
+.RechargeLayer .form .invioices_list .I_I_m_p .p_m_tt_I .child_m .check_m{float:left;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat;  width:20px; height:20px;}
+.RechargeLayer .form .invioices_list .I_I_m_p .p_m_tt_I .child_m .checkin{background:url(/App_Themes/images/img_car_check.png) no-repeat;}
+.RechargeLayer .form .invioices_list .I_I_m_p .p_m_tt_I .child_m .check_name{float:left; margin-left:5px;}
+
+.RechargeLayer .form .invioices_list .II_I_m_p{ margin:5%; display:none;}
+.RechargeLayer .form .invioices_list .II_I_m_p .fp_info_model{ margin-bottom:10px;}
+.RechargeLayer .form .invioices_list .II_I_m_p .fp_info_model .fp_t_m{ float:left; margin-top:4px;}
+.RechargeLayer .form .invioices_list .II_I_m_p .fp_info_model .fp_t_c{ float:left;}
+.RechargeLayer .form .invioices_list .II_I_m_p .fp_info_model .fp_t_c input{width: 128px;border: 1px solid #999;height: 25px;padding: 0px 2px;}
+
+
+
+
+/*下单成功*/
+.success_order{}
+.success_order .s_i_m{ text-align:center; margin:13% 0px;}
+.success_order .s_i_m img{width:15%;}
+.success_order .s_ii_m{text-align:center; color:#fff; margin-bottom:7%;}
+.success_order .s_iii_m{ margin-left:5%; color:#fff;}
+.success_order .btnDiv{ margin:5%;}
+.success_order .btnDiv .NowPayOrderModel{background:#990000; border-radius:3px; color:#fff; padding:3% 5%; width:56px; margin: 0 auto;}
+
+.success_order .s_iii_m .I_O_M_I
+{
+    
+    margin-top:10px;
+}
+.success_order .s_iii_m .I_O_M_I span
+{
+    color: #a40000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.success_order .s_iii_m .II_O_M_I
+{
+    margin-top: 10px;
+}
+.success_order .s_iii_m .II_O_M_I span
+{
+    color: #a40000;
+    font-weight: bold;
+}
+
+.BankPayModel
+{
+    border: 1px solid #333;
+    margin: 2%;
+    width: 96%;
+    background:#333;
+}
+
+.BankPayModel .small_b
+{
+    float: left;padding:10px;
+}
+.BankPayModel .small_b .c_b_smll
+{
+    float: left; margin:5px 10px 0 0;
+}
+.BankPayModel .small_b .c_b_ico
+{
+    float: left; background:url(/App_Themes/images/combo.png) no-repeat;  width:126px; height:26px;
+}
+.BankPayModel .small_b .c_b_ico img
+{
+    width: 220px;
+    height: 43px;
+}
+
+.InputPassWordM{ color:#fff; margin-bottom:3%;}
+.checkboxM{float:left;background:url(/App_Themes/images/img_car_nocheck.png) no-repeat;  width:20px; height:20px;}
+.checkin{background:url(/App_Themes/images/img_car_check.png) no-repeat;}
+
+.paypwdModelIN{width: 55%;border: 1px solid #999;height: 25px;padding: 0px 2px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

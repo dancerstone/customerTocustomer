@@ -1,0 +1,9 @@
+.Dialog { width: auto; border: 1px solid #666666; }
+.Dialog .DTitle { background: #F0F0F0; height: 37px; line-height: 37px; margin: 0; overflow: hidden; padding: 0; text-align: right; }
+.Dialog .DTitle .Dclo { color: #666; font-size: 14px; }
+.Dialog .DTitle font { float: left; color: #1A54B0; font-size: 14px; height: 37px; text-align: left; text-indent: 10px; font-weight: bold; }
+.Dialog .DTitle a { background: no-repeat scroll 0 13px; color: #F0F0F0; float: right; font-size: 10px; height: 22px; text-align: left; text-indent: 4px; width: 50px; padding-right: 5px; }
+.Dialog .DTitle a:hover { background: no-repeat scroll 0 -17px; }
+.Dialog .DTitle button { float: right; margin-top: 5px; margin-right: 5px; }
+.Dialog .DCnt { background-color: #FFFFFF; padding: 10px 4px; }
+.Dialog .Dbtn { margin-right: 10px; }

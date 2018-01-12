@@ -1,0 +1,11 @@
+.starpic_model { position: relative; width: 600px; height: 24px; }
+.starpic_model ul, .star span { float: left; display: inline; height: 19px; line-height: 19px; }
+.starpic_model ul { margin: 0 10px; }
+.starpic_model li { float: left; width: 24px; cursor: pointer; text-indent: -9999px; background: url(/App_Themes/Public/Star/image/star.png) no-repeat; }
+.starpic_model strong { color: #f60; padding-left: 10px; }
+.starpic_model li.on { background-position: 0 -28px; }
+.starpic_model p { position: absolute; top: 20px; width: 159px; height: 60px; display: none; background: url(/App_Themes/Public/Star/image/icon.gif) no-repeat; padding: 7px 10px 0; }
+.starpic_model p em { color: #f60; display: block; font-style: normal; }
+
+.changestar_color_1 { background: url(/App_Themes/Public/Star/image/star.png) no-repeat; background-position: 0px 0px; width: 19px; height: 19px; float: left; margin-right: 5px; }
+.changestar_color_2 { background: url(/App_Themes/Public/Star/image/star.png) no-repeat; background-position: 0px -28px; width: 19px; height: 19px; float: left; margin-right: 5px; }

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DealMvc.Core</RootNamespace>
+    <AssemblyName>DealMvc.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Discuz.Toolkit, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DealMvc\bin\Discuz.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Desktop\DZ论坛测试demo\MvcApplication\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BLL_AdvertisingInfo.cs" />
+    <Compile Include="Base\BLL_HelpCenterCate.cs" />
+    <Compile Include="Base\BLL_HelpCenterInfo.cs" />
+    <Compile Include="Base\BLL_PointsSet.cs" />
+    <Compile Include="Base\BLL_SiteEmail.cs" />
+    <Compile Include="Base\BLL_SiteInfo.cs" />
+    <Compile Include="Base\BLL_SiteLoginAPI.cs" />
+    <Compile Include="Base\BLL_SiteMessage.cs" />
+    <Compile Include="Base\BLL_SitePayAPI.cs" />
+    <Compile Include="Base\BLL_SiteUpLoad.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DealMvc.Common.Net\DealMvc.Common.Net.csproj">
+      <Project>{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}</Project>
+      <Name>DealMvc.Common.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Common\DealMvc.Common.csproj">
+      <Project>{6FECBA71-C24B-489F-90F6-0675EE3EDE28}</Project>
+      <Name>DealMvc.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.ControllerBase\DealMvc.ControllerBase.csproj">
+      <Project>{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}</Project>
+      <Name>DealMvc.ControllerBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.DBUtility\DealMvc.DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DealMvc.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.ExceptionEx\DealMvc.ExceptionEx.csproj">
+      <Project>{0081A0BA-80D8-4565-88B4-679477FD2945}</Project>
+      <Name>DealMvc.ExceptionEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Model\DealMvc.Model.csproj">
+      <Project>{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}</Project>
+      <Name>DealMvc.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Orm\DealMvc.Orm.csproj">
+      <Project>{9CD97381-4BD9-4895-8F23-59B2E5E7053A}</Project>
+      <Name>DealMvc.Orm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.SendMessage\DealMvc.SendMessage.csproj">
+      <Project>{6BE83C0D-5925-4755-9626-4E539830582A}</Project>
+      <Name>DealMvc.SendMessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.SqlTranEx\DealMvc.SqlTranEx.csproj">
+      <Project>{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}</Project>
+      <Name>DealMvc.SqlTranEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.WebCache\DealMvc.WebCache.csproj">
+      <Project>{8DD231B9-FCFB-461D-A983-9D908832E3AF}</Project>
+      <Name>DealMvc.WebCache</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Goods\" />
+    <Folder Include="Magazine\" />
+    <Folder Include="Member\" />
+    <Folder Include="Orders\" />
+    <Folder Include="ShoppingCar\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

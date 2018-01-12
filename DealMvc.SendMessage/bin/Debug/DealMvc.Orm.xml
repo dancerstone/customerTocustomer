@@ -1,0 +1,1597 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealMvc.Orm</name>
+    </assembly>
+    <members>
+        <member name="T:DealMvc.Orm.TableInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.TableInfo.Table">
+            <summary>
+            类对应的表的相关信息
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.TableInfo.Columns">
+            <summary>
+            类对应的列的相关信息
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.TableInfo.TypeFullName">
+            <summary>
+            获取模型的命名空间全称
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.Compiler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.Compiler.Complier(System.String[],System.String,System.String,System.Type@,System.Object@,System.Boolean)">
+            <summary>
+            动态编译代码到dll
+            </summary>
+            <param name="reference">要引用的程序集(文件形式，如：System.dll)</param>
+            <param name="outputAssembly">程序集的输出目录</param>
+            <param name="codeSource">要编译的代码</param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.CodeTemplate`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="ObjectType"></typeparam>
+        </member>
+        <member name="M:DealMvc.Orm.CodeTemplate`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.CodeTemplate`1.GetCodeSource">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.PagerEx.SQLOrderType">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.PagerEx.SQLOrderType.ASC">
+            <summary>
+            升序
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.PagerEx.SQLOrderType.DESC">
+            <summary>
+            降序
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.PagerEx.PagerDesAlign">
+            <summary>
+            分页描述位置
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.PagerEx.PagerDesAlign.Left">
+            <summary>
+            左边
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.PagerEx.PagerDesAlign.Right">
+            <summary>
+            右边
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.PagerEx.Pager`1">
+            <summary>
+            分页类
+            </summary>
+            <typeparam name="table"></typeparam>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String,System.Data.SqlClient.SqlParameter[])">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+             <param name="_sqlparms">条件参数</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+             <param name="_sqlparms">条件参数</param>
+             <param name="_pagesize">每页记录数</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.Int32,System.String,DealMvc.Orm.PagerEx.SQLOrderType)">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+             <param name="_sqlparms">条件参数</param>
+             <param name="_pagesize">每页记录数</param>
+             <param name="_ordercolumn">排序字段,默认为id</param>
+             <param name="_ordertype">排序方式</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.Int32,System.String[],DealMvc.Orm.PagerEx.SQLOrderType[])">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+             <param name="_sqlparms">条件参数</param>
+             <param name="_pagesize">每页记录数</param>
+             <param name="_ordercolumn">排序字段,默认为id</param>
+             <param name="_ordertype">排序方式</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.Int32,System.String[],DealMvc.Orm.PagerEx.SQLOrderType[],System.String)">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+             <param name="_sqlparms">条件参数</param>
+             <param name="_pagesize">每页记录数</param>
+             <param name="_ordercolumn">排序字段,默认为id</param>
+             <param name="_ordertype">排序方式</param>
+             <param name="_columns">查询字段,默认为*</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.String,System.Object[])">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="_sqlwhere">条件</param>
+             <param name="objects">条件参数</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="func">Lambda形式条件和参数</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="func">Lambda形式条件和参数</param>
+             <param name="_pagesize">每页记录数</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="func">Lambda形式条件和参数</param>
+             <param name="_pagesize">每页记录数</param>
+            <param name="funcOrder">Lambda形式排序</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.#ctor(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="_pageindex">当前页数, 1为第一页</param>
+             <param name="func">Lambda形式条件和参数</param>
+             <param name="_pagesize">每页记录数</param>
+            <param name="funcOrder">Lambda形式排序</param>
+            <param name="funcFields">Lambda形式字段</param>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.GetPageList">
+            <summary>
+            执行查询分页
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.PagerStaticHTML(System.Web.UI.Page)">
+            <summary>
+            生成分页按钮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.PagerHTML(System.Web.UI.Page)">
+            <summary>
+            生成分页按钮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.PagerHTML_XLY(System.Web.UI.Page)">
+            <summary>
+            生成分页按钮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.PagerHTML_FL(System.Web.UI.Page)">
+            <summary>
+            生成分页按钮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.PagerEx.Pager`1.PagerHTMLNoRefresh(System.Web.UI.Page)">
+            <summary>
+            生成无刷新分页按钮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.PageSize">
+            <summary>
+            每页记录数
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.PageCount">
+            <summary>
+            总共页数,只读
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.PageIndex">
+            <summary>
+            当前页数, 1为第一页
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.SQLWhere">
+            <summary>
+            SQL查询条件
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.SQLParms">
+            <summary>
+            SQL参数,可为null
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.OrderColumn">
+            <summary>
+            排序字段,默认为id
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.OrderType">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.OrderString">
+            <summary>
+            排序字符串
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.RecordCount">
+            <summary>
+            总记录数,只读
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.Columns">
+            <summary>
+            查询字段,默认为*
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.DataList">
+            <summary>
+            查询结果List集合
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.DataSet">
+            <summary>
+            DataSet 数据
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.UrlSign">
+            <summary>
+            地址栏参数名称,默认为Page
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.C_aNums">
+            <summary>
+            分页单边点击a标签个数, 默认3个
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.C_DesIsShow">
+            <summary>
+            分页描述是否显示
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.C_CssClass">
+            <summary>
+            分页样式Class, 默认样式为 PagerStyle1
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.PagerEx.Pager`1.C_PagerDesAlign">
+            <summary>
+            分页描述位置
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.CompilerPathHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.CompilerPathHelper.GetCompilerDataAccessPath``1">
+            <summary>
+            返回要编译DataAccess的全路径
+            </summary>
+            <typeparam name="EntityObject"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.CompilerPathHelper.GetBinFolderPath">
+            <summary>
+            返加Bin目录路径（Bin后边没有"\"）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.ColumnAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.ColumnAttribute.#ctor(System.String,System.Data.SqlDbType)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="type"></param>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.Length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.Intro">
+            <summary>
+            简介
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.CanNull">
+            <summary>
+            是否支持空
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.Default">
+            <summary>
+            默认值
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.PrimaryKey">
+            <summary>
+            是否是主键,但不表示自动增长
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.ColumnAttribute.AutoIncrement">
+            <summary>
+            是否是自动增长列
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.EntityCore`1">
+            <summary>
+            访问数据库的核心操作类
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.InvokeMethod(System.String,System.Object[])">
+            <summary>
+            调用方法
+            </summary>
+            <param name="method">要调用的方法</param>
+            <param name="parameter">调用方法的参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.InvokeMethod(System.String,System.Object[],System.Type[])">
+            <summary>
+            调用方法
+            </summary>
+            <param name="method">要调用的方法</param>
+            <param name="parameter">调用方法的参数</param>
+            <param name="parameterTypes">调用方法的参数类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModelListBySql(System.String)">
+            <summary>
+            通过SQL语句获取对象集合
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Add(System.Object)">
+            <summary>
+            添加一条记录,正常返回新增主键, 异常返回-1
+            </summary>
+            <param name="model">model实例</param>
+            <returns>返回新增int 自动增加的主键的记录号</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Add(System.Object,DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            添加一条记录,正常返回新增主键, 异常返回-1, 事务返回0
+            </summary>
+            <param name="model">model实例</param>
+            <param name="_SqlTranExtensions">事务机制对象</param>
+            <returns>返回新增int 自动增加的主键的记录号</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Delete(System.Nullable{System.Int32})">
+            <summary>
+            删除记录
+            </summary>
+            <param name="primaryKeyValue">主键值</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Delete(System.Nullable{System.Int32},DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            删除记录
+            </summary>
+            <param name="primaryKeyValue">主键值</param>
+            <param name="_SqlTranExtensions">事务机制对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.DeleteWhere(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            根据条件删除记录
+            </summary>
+            <param name="where">删除条件</param>
+            <param name="cmdParms">删除参数</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.DeleteWhere(System.String,System.Object[])">
+            <summary>
+            根据条件删除记录
+            </summary>
+            <param name="where">删除条件</param>
+            <param name="objects">删除参数</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.DeleteWhere(System.String,System.Data.SqlClient.SqlParameter[],DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            根据条件删除记录
+            </summary>
+            <param name="where">删除条件</param>
+            <param name="cmdParms">删除参数</param>
+            <param name="_SqlTranExtensions">事务机制对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.DeleteWhere(System.String,System.Object[],DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            根据条件删除记录
+            </summary>
+            <param name="where">删除条件</param>
+            <param name="objects">删除参数</param>
+            <param name="_SqlTranExtensions">事务机制对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Update(`0)">
+            <summary>
+            更新记录
+            </summary>
+            <param name="model">实体</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Update(`0,DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            更新记录
+            </summary>
+            <param name="model">实体</param>
+            <param name="_SqlTranExtensions">事务机制对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Exists(System.Object)">
+            <summary>
+            查看记录是否存在
+            </summary>
+            <param name="primaryKeyValue">主键值</param>
+            <returns>返回布尔值</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Exists(System.String,System.Data.SqlClient.SqlParameter[])">
+             <summary>
+             查看记录是否存在
+             </summary>
+            <param name="strWhere">条件</param>
+            <param name="cmdParms">参数</param>
+             <returns>返回布尔值</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Exists(System.String,System.Object[])">
+             <summary>
+             查看记录是否存在
+             </summary>
+            <param name="strWhere">条件</param>
+            <param name="objects">参数</param>
+             <returns>返回布尔值</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Exists(System.String[],System.Data.SqlDbType[],System.Object[])">
+            <summary>
+            查看记录是否存在
+            </summary>
+            <param name="KeyNames">字段名数组</param>
+            <param name="_SqlDbTypes">字段类型数组</param>
+            <param name="Values">字段值数组</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.Exists(System.String[],System.Object[])">
+            <summary>
+            查看记录是否存在
+            </summary>
+            <param name="KeyNames">字段名数组</param>
+            <param name="objects">字段值数组</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetList(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            查询记录
+            </summary>
+            <param name="strWhere">条件</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetList(System.String,System.Object[])">
+            <summary>
+            查询记录
+            </summary>
+            <param name="strWhere">条件</param>
+            <param name="objects">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetList(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.String)">
+            <summary>
+            查询记录并返回指定条数
+            </summary>
+            <param name="topRecord">返回指定条数</param>
+            <param name="strWhere">条件</param>
+            <param name="cmdParms">参数</param>
+            <param name="filedOrder">排序参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetList(System.Int32,System.String,System.Object[],System.String)">
+            <summary>
+            查询记录并返回指定条数
+            </summary>
+            <param name="topRecord">返回指定条数</param>
+            <param name="strWhere">条件</param>
+            <param name="objects">参数</param>
+            <param name="filedOrder">排序参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModel(System.Nullable{System.Int32})">
+            <summary>
+            返回一个实体,不可能为null
+            </summary>
+            <param name="primaryKeyValue">主键值</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModel(System.Nullable{System.Int32},System.Boolean)">
+            <summary>
+            返回一个实体,canNull==false(不能返回null,为null返回一个新实体)
+            </summary>
+            <param name="primaryKeyValue">主键值</param>
+            <param name="canNull">是否可以返回null</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModel(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个实体,不可能为null
+            </summary>
+            <param name="where">条件</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModel(System.String,System.Object[])">
+            <summary>
+            返回一个实体,不可能为null
+            </summary>
+            <param name="where">条件</param>
+            <param name="objects">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModel(System.String,System.Data.SqlClient.SqlParameter[],System.Boolean)">
+            <summary>
+            返回一个实体,canNull==false(不能返回null,为null返回一个新实体)
+            </summary>
+            <param name="where">条件</param>
+            <param name="cmdParms">参数</param>
+            <param name="canNull">是否可以返回null</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModel(System.String,System.Object[],System.Boolean)">
+            <summary>
+            返回一个实体,canNull==false(不能返回null,为null返回一个新实体)
+            </summary>
+            <param name="where">条件</param>
+            <param name="objects">参数</param>
+            <param name="canNull">是否可以返回null</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModelList(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回实体列表,无则返回一个空列表Count==0, 注意没有返回null的情况
+            </summary>
+            <param name="where">查询条件</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModelList(System.String,System.Object[])">
+            <summary>
+            返回实体列表,无则返回一个空列表Count==0, 注意没有返回null的情况
+            </summary>
+            <param name="where">查询条件</param>
+            <param name="objects">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModelList(System.String,System.Data.SqlClient.SqlParameter[],System.Boolean)">
+            <summary>
+            返回实体列表,无是否返回一个空由canEmpty决定
+            </summary>
+            <param name="where">查询条件</param>
+            <param name="cmdParms">参数</param>
+            <param name="canEmpty">无效 - 是否可以返回null</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModelList(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.String)">
+            <summary>
+            返回实体列表,无则返回一个空列表
+            </summary>
+            <param name="topRecord">返回指定条数</param>
+            <param name="strWhere">条件</param>
+            <param name="cmdParms">参数</param>
+            <param name="filedOrder">排序参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetModelList(System.Int32,System.String,System.Object[],System.String)">
+            <summary>
+            返回实体列表,无则返回一个空列表
+            </summary>
+            <param name="topRecord">返回指定条数</param>
+            <param name="strWhere">条件</param>
+            <param name="objects">参数</param>
+            <param name="filedOrder">排序参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetListAndFileds(System.String,System.Data.SqlClient.SqlParameter[],System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="strWhere">查询条件</param>
+            <param name="returnFields">返回的字段</param>
+            <param name="cmdParms">参数</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetListAndFileds(System.String,System.Object[],System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="strWhere">查询条件</param>
+            <param name="returnFields">返回的字段</param>
+            <param name="objects">参数</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetListAndFileds(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="topRecord">返回多少条</param>
+            <param name="strWhere">查询条件</param>
+            <param name="cmdParms">参数</param>
+            <param name="returnFields">返回的字段</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetListAndFileds(System.Int32,System.String,System.Object[],System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="topRecord">返回多少条</param>
+            <param name="strWhere">查询条件</param>
+            <param name="objects">参数</param>
+            <param name="returnFields">返回的字段</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetListAndFileds(System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.String,System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="topRecord">返回多少条</param>
+            <param name="strWhere">查询条件</param>
+            <param name="cmdParms">条件参数</param>
+            <param name="filedOrder">排序字段</param>
+            <param name="returnFields">返回的字段</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetListAndFileds(System.Int32,System.String,System.Object[],System.String,System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="topRecord">返回多少条</param>
+            <param name="strWhere">查询条件</param>
+            <param name="objects">条件参数</param>
+            <param name="filedOrder">排序字段</param>
+            <param name="returnFields">返回的字段</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetPageList(System.Int32,System.Int32,System.String,System.Data.SqlClient.SqlParameter[],System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="PageSize">分页个数</param>
+            <param name="PageIndex">当前分页号</param>
+            <param name="strWhere">条件</param>
+            <param name="cmdParms">条件参数</param>
+            <param name="orderColType">排序字符串</param>
+            <param name="Columns">赛选字段</param>
+            <returns></returns>
+        </member>
+        <member name="F:DealMvc.Orm.EntityCore`1.Sign">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.AddModelWebCache(System.String,System.Object)">
+            <summary>
+            缓存对象
+            </summary>
+            <param name="Key">键</param>
+            <param name="obj">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.AddModelWebCache(System.String,System.Object,System.Int32)">
+            <summary>
+            缓存对象
+            </summary>
+            <param name="Key">键</param>
+            <param name="obj">对象</param>
+            <param name="_SecondsBase">缓存时间(秒)</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.ClearWebCache">
+            <summary>
+            清除 当前和 EntityObject 所有有关的缓存
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.EntityCore`1.GetSqlParametersString(System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.SQL">
+            <summary>
+            SQLParameter
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.SQL.GetSQLParameter``1(System.String,System.Object[],System.Type)">
+            <summary>
+            处理SQLParameter
+            </summary>
+            <param name="s">SQL字符串</param>
+            <param name="o">参数对象</param>
+            <param name="t">表Type</param>
+            <returns>Common.Net.CreateParameter</returns>
+        </member>
+        <member name="M:DealMvc.Orm.SQL.DealSQL``1(System.String)">
+            <summary>
+            处理SQL语句, 关于简写
+            </summary>
+            <param name="s">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="F:DealMvc.Orm.SQL.IsOpenSubSite">
+            <summary>
+            分站功能开关
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.SQL.SetSubSiteStatus">
+            <summary>
+            是否开启分站功能
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.AttributeHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetTableInfo``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="ObjectType"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetColumnInfo``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="ObjectType"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetPrimaryKey``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="ObjectType"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetInfo``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="ObjectType"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.PrimaryKeyTypeToCs(DealMvc.Orm.ColumnAttribute)">
+            <summary>
+            C#数据类型到Database
+            </summary>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetColunsString(DealMvc.Orm.ColumnAttribute[])">
+            <summary>
+            获取所有列如：id,name,age
+            </summary>
+            <param name="cols">列数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetColunsString(DealMvc.Orm.ColumnAttribute[],System.Boolean)">
+            <summary>
+            获取所有列如：id,name,age
+            </summary>
+            <param name="cols">列数组</param>
+            <param name="removeIdentity">是否称除自动列</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetValuesString(DealMvc.Orm.ColumnAttribute[])">
+            <summary>
+            获取所有列如：@id,@name,@age
+            </summary>
+            <param name="cols">列数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetValuesString(DealMvc.Orm.ColumnAttribute[],System.Boolean)">
+            <summary>
+            获取所有列如：@id,@name,@age
+            </summary>
+            <param name="cols">列数组</param>
+            <param name="removeIdentity">是否称除自动列</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetColunsString(DealMvc.Orm.ColumnAttribute[],System.String,System.Boolean)">
+            <summary>
+            获取所有列如：id,name,age
+            </summary>
+            <param name="cols">列数组</param>
+            <param name="tagFix">列名的前缀</param>
+            <param name="removeIdentity">是否称除自动列</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetSqlParameterDeclare(DealMvc.Orm.ColumnAttribute[])">
+            <summary>
+            生成列的SqlParameter声明如：new SqlParameter("@Title", SqlDbType.NVarChar,64),
+            </summary>
+            <param name="cols">列列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetSqlParameterDeclare(DealMvc.Orm.ColumnAttribute[],System.Boolean)">
+            <summary>
+            生成列的SqlParameter声明如：new SqlParameter("@Title", SqlDbType.NVarChar,64),
+            </summary>
+            <param name="cols">列列表</param>
+            <param name="removeIdentity">是否删除自动列</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetSqlParameterValue(DealMvc.Orm.ColumnAttribute[])">
+            <summary>
+            生成列的SqlParameter的赋值:如parameters[0].Value = model.Title;
+            </summary>
+            <param name="cols">列列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetSqlParameterValue(DealMvc.Orm.ColumnAttribute[],System.Boolean)">
+            <summary>
+            生成列的SqlParameter的赋值:如parameters[0].Value = model.Title;
+            </summary>
+            <param name="cols">列列表</param>
+            <param name="removeIdentity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.SubSiteSetValue(System.Int32,System.String)">
+            <summary>
+            分站动态赋值
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetUpdateColumns(DealMvc.Orm.ColumnAttribute[])">
+            <summary>
+            生成Update时所需要字段
+            </summary>
+            <param name="cols"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.AttributeHelper.GetPrimaryKeyWhere(DealMvc.Orm.ColumnAttribute)">
+            <summary>
+            生成以主键为条件的语句
+            </summary>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.CompilerHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.CompilerHelper.Compiler``1(System.String[],System.Type@,System.Object@,System.Boolean)">
+            <summary>
+            动态编译
+            </summary>
+            <param name="reffs">要加引的DLL文件名外来DLL请注意路径.\r\n默认引用system.dll、system.data.dll、system.Xml.dll、Jessica.DbHelper.dll、Jessica.Core.dll</param>
+        </member>
+        <member name="T:DealMvc.Orm.TableAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.TableAttribute.name">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.TableAttribute.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:DealMvc.Orm.TableAttribute.Name">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.TableAttribute.Info">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="T:DealMvc.List2`1">
+            <summary>
+            ModelList缓冲对象
+            </summary>
+        </member>
+        <member name="P:DealMvc.List2`1.List">
+            <summary>
+            获得数据库List集合
+            </summary>
+        </member>
+        <member name="P:DealMvc.List2`1.Count">
+            <summary>
+            获得数据库List个数
+            </summary>
+        </member>
+        <member name="T:DealMvc.SQLSort">
+            <summary>
+            SQL类型
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLSort.SQLWhere">
+            <summary>
+            SQL条件
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLSort.SQLOrder">
+            <summary>
+            SQL排序
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLSort.SQLFields">
+            <summary>
+            SQL返回字段
+            </summary>
+        </member>
+        <member name="T:DealMvc.SQLAndParameter">
+            <summary>
+            SQL和参数类
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLAndParameter._SQLSort">
+            <summary>
+            默认为SQL条件
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLAndParameter.sign">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLAndParameter.SQL">
+            <summary>
+            SQL部分语句
+            </summary>
+        </member>
+        <member name="F:DealMvc.SQLAndParameter.Parameter">
+            <summary>
+            SQL参数
+            </summary>
+        </member>
+        <member name="M:DealMvc.SQLAndParameter.CheckSQLSort(DealMvc.SQLSort)">
+            <summary>
+            检查SQL类型是否正确
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.LambdaToSQL">
+            <summary>
+            LambdaToSQL处理类
+            </summary>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_ColumeName``1(``0)">
+            <summary>
+            返回字段名
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_Sum``1(``0)">
+            <summary>
+            字段和， sum(money)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_Avg``1(``0)">
+            <summary>
+            字段平局值， SELECT AVG(OrderPrice) AS OrderAverage FROM Orders
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_Distinct``1(``0)">
+            <summary>
+            取出某列重复字段， SELECT DISTINCT 列名称 FROM 表名称
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_Desc``1(``0)">
+            <summary>
+            Desc
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_Asc``1(``0)">
+            <summary>
+            Asc
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_OrderByArr``1(``0,System.Nullable{System.Int32}[])">
+            <summary>
+            Order By Arr 例子:  select * from table1 where id in (183,200) order by charindex(',' + ltrim(id) + ',' , ',183,200,')
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_In(System.Nullable{System.Int32},System.Nullable{System.Int32}[])">
+            <summary>
+            In
+            </summary>
+            <param name="obj"></param>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_In(System.String,System.String[])">
+             <summary>
+            (string) In
+             </summary>
+             <param name="obj"></param>
+             <param name="array"></param>
+             <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_NotIn(System.Nullable{System.Int32},System.Nullable{System.Int32}[])">
+            <summary>
+            NotIn
+            </summary>
+            <param name="obj"></param>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_Like(System.String,System.String)">
+            <summary>
+            Like - 不需传递%  生成 %likeStr%
+            </summary>
+            <param name="str"></param>
+            <param name="likeStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_LikeR(System.String,System.String)">
+            <summary>
+            LikeR - 不需传递%  生成 likeStr%
+            </summary>
+            <param name="str"></param>
+            <param name="likeStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_LikeL(System.String,System.String)">
+            <summary>
+            LikeL - 不需传递%  生成 %likeStr
+            </summary>
+            <param name="str"></param>
+            <param name="likeStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_NotLike(System.String,System.String)">
+            <summary>
+            NotLike
+            </summary>
+            <param name="str"></param>
+            <param name="likeStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_IsNotNullAndEqual``1(System.String,System.String)">
+            <summary>
+            字符串如果不为null,则执行等于比较
+            </summary>
+            <param name="obj"></param>o
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_IsNotNullAndDo``1(``0,System.Object,System.String)">
+            <summary>
+            object如果不为null,则执行等于FuHao(参数二)比较
+            </summary>
+            <param name="obj"></param>
+            <param name="Value"></param>
+            <param name="FuHao">比较符号</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_IsNotNullAndEmptyAndDo``1(``0,System.Object,System.String)">
+            <summary>
+            object如果不为null和Empty,则执行等于FuHao(参数二)比较
+            </summary>
+            <param name="obj"></param>
+            <param name="Value"></param>
+            <param name="FuHao">比较符号</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.lb_IsNotFalseAndEqual``1(``0,System.Boolean)">
+            <summary>
+            如果传入false则不执行比较
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.GetWhere``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            返回SQL和参数
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="func">Lambda表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.GetValue(DealMvc.SQLAndParameter,System.Object)">
+            <summary>
+            获取和处理参数值
+            </summary>
+            <param name="SP"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.DealArrValue(DealMvc.SQLAndParameter,System.Object)">
+            <summary>
+            处理数组
+            </summary>
+            <param name="SP"></param>
+            <param name="Result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.GetColumeName(DealMvc.SQLAndParameter,System.Linq.Expressions.Expression,System.Boolean)">
+            <summary>
+            获取字段名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.LambdaToSQL.ExpressionTypeCast(System.Linq.Expressions.ExpressionType)">
+            <summary>
+            获取符号
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.DataAccessCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.DataAccessCache.DynamicTypeCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.DataAccessCache.DynamicInstanceCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.DataAccessCache.Init">
+            <summary>
+            初始
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.DataAccessCache.GetType``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="EntityObject"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.DataAccessCache.CreateOneModelAccessBLL``1(System.Type@,System.Object@,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <typeparam name="EntityObject"></typeparam>
+        </member>
+        <member name="T:DealMvc.Orm.DataTableExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.DataTableExtensions.ToList``1(System.Data.DataTable)">
+            <summary>
+            DataTable 转换为List 集合
+            </summary>
+            <typeparam name="TResult">类型</typeparam>
+            <param name="dt">DataTable</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.DataTableExtensions.ToDataTable``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            转换为一个DataTable
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMvc.Orm.EntityBase`1">
+            <summary>
+            Model基类
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Add(`0,DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            Add
+            </summary>
+            <param name="model">当前实例</param>
+            <param name="_SqlTranExtensions">事物对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Add(DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            Add
+            </summary>
+            <param name="_SqlTranExtensions">事物对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Add(`0)">
+            <summary>
+            Add
+            </summary>
+            <param name="model">当前实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Add">
+            <summary>
+            Add
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Delete(System.Nullable{System.Int32},DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            Delete
+            </summary>
+            <param name="primaryKeyValue">主键</param>
+            <param name="_SqlTranExtensions">事物对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Delete(DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            Delete
+            </summary>
+            <param name="_SqlTranExtensions">事物对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Delete
+            </summary>
+            <param name="primaryKeyValue">主键</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Delete">
+            <summary>
+            Delete
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Update(`0,DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            Update
+            </summary>
+            <param name="model">当前实例</param>
+            <param name="_SqlTranExtensions">事物对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Update(DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            Update
+            </summary>
+            <param name="_SqlTranExtensions">事物对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Update(`0)">
+            <summary>
+            Update
+            </summary>
+            <param name="model">当前实例</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Exists(System.Object)">
+            <summary>
+            Exists
+            </summary>
+            <param name="primaryKeyValue">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetModel(System.Nullable{System.Int32})">
+            <summary>
+            GetModel - 不可能返回null
+            </summary>
+            <param name="primaryKeyValue">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetModel(System.Nullable{System.Int32},System.Boolean)">
+            <summary>
+            GetModel
+            </summary>
+            <param name="primaryKeyValue">主键</param>
+            <param name="canNull">是否能返回null</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.DeleteWhere(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            DeleteWhere
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.DeleteWhere(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},DealMvc.SqlTranEx.SqlTranExtensions)">
+            <summary>
+            DeleteWhere
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="_SqlTranExtensions">事务对象</param>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Exists
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetList
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetList(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetList
+            </summary>
+            <param name="Top">条数</param>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="funcOrder">Lambda形式排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetModel(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetModel - 不可能返回null
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetModel(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Boolean)">
+            <summary>
+            GetModel
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="canNull">是否能返回null</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetModelList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetModelList
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetModelList(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetModelList
+            </summary>
+            <param name="Top">条数</param>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="funcOrder">Lambda形式排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetListAndFileds(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetListAndFileds
+            </summary>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="funcFields">Lambda形式返回字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetListAndFileds(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetListAndFileds
+            </summary>
+            <param name="Top">条数</param>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="funcFields">Lambda形式返回字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.LambdaToDBHelper`1.GetListAndFileds(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            GetListAndFileds
+            </summary>
+            <param name="Top">条数</param>
+            <param name="func">Lambda形式条件和参数</param>
+            <param name="funcOrder">Lambda形式排序</param>
+            <param name="funcFields">Lambda形式返回字段</param>
+            <returns></returns>
+        </member>
+        <member name="F:DealMvc.Orm.EntityBase`1._Prlist">
+            <summary>
+            表结构
+            </summary>
+        </member>
+        <member name="F:DealMvc.Orm.EntityBase`1._DataRow">
+            <summary>
+            数据行
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.SetPValue(System.String)">
+            <summary>
+            赋值
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.SetDataEmpty(System.String)">
+            <summary>
+            清空Data该格字段数据
+            </summary>
+            <param name="ColumnName"></param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.Authentication(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+            <param name="PropertyName"></param>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.getValues">
+            <summary>
+            获得所有字段的值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.GM``1(System.Int32,``0@)">
+            <summary>
+            外键查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id"></param>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.GM``1(System.String,System.Object[],``0@)">
+            <summary>
+             条件查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMvc.Orm.EntityBase`1.GM``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},``0@)">
+            <summary>
+             条件查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DealMvc.Orm.EntityBase`1.IsNull">
+            <summary>
+            是否为null
+            </summary>
+        </member>
+        <member name="T:DealMvc.Orm.CheckAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealMvc.Orm.CheckAttribute.#ctor(System.String,System.String,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="des"></param>
+            <param name="type"></param>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.Des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.Min">
+            <summary>
+            Type为数字(int)时,表示最小值(可等于),Type为字符串(string)时,表示最小长度(可等于)
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.Max">
+            <summary>
+            Type为数字(int)时,表示最大值(可等于),Type为字符串(string)时,表示最大长度(可等于)
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.NotEmpty">
+            <summary>
+            是否允许为空
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.IsEmail">
+            <summary>
+            是否限制为邮箱格式
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.IsPhone">
+            <summary>
+            是否限制为电话号码格式
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.IsMoney">
+            <summary>
+            是否限制为货币格式
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.NotSupportChinese">
+            <summary>
+            是否允许中文
+            </summary>
+        </member>
+        <member name="P:DealMvc.Orm.CheckAttribute.IsNumber">
+            <summary>
+            是否限制为数字
+            </summary>
+        </member>
+    </members>
+</doc>

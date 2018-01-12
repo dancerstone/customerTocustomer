@@ -1,0 +1,193 @@
+﻿www.lc-demo.com
+sxqc
+sxqc+++
+
+
+
+    <div class="nav_main">
+        <div class="list_title">
+            编辑资料</div>
+        <div class="list_content">
+            <form method="post" class="frmex">
+            <table class="list_table">
+                <tr>
+                    <td align="right">真实姓名</td>
+                    <td>
+                        <input type="text" name="M_ReallyName" class="m_input" />
+                        <!--<span class="InputDetail">{真实姓名}</span>-->
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+
+
+
+
+.noV -- 表单应用自动保存值失效
+.noJ -- Jquery自动设置width失效
+.J   -- JVerify验证生效,主要是为了统一表单外观样式 正常,目的让<input type="text" name="a1" class="J" min="2" max="8" />生效(不是必填,但又控制了min和max生效)
+.notips  -- 隐藏正常提示信息
+.noBlur  -- 失去焦点时不验证
+.noFocus -- 得到焦点时不验证
+
+
+//使用说明：http://www.my97.net/dp/demo/index.htm
+/*1 日期插件*/ 
+	<script src="/JS/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+    <script>
+        $(function ()
+        {
+            $(".time").addClass("noJ").width(80).live("click", function () { WdatePicker({dateFmt:'yyyy-MM-dd'}); });
+        });
+    </script>
+/*2 日期和时间*/ 
+	<script src="/JS/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+    <script>
+        $(function ()
+        {
+            $(".time2").addClass("noJ").width(180).live("click", function () { WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'}); });
+        });
+    </script>
+
+
+
+
+/*2 CKeditor 调用方式 -- 无用 */
+<%=Html.TextArea("ProductContent", new { @class = "ckeditor" , style="width:680px;height:200px;"}) %>
+<script>Editor("ProductContent");</script>
+
+
+
+
+<script charset="utf-8" src="/KindEditor/kindeditor-min.js" type="text/javascript"></script>
+<script charset="utf-8" src="/KindEditor/lang/zh_CN.js" type="text/javascript"></script>
+
+/*2.2 KindEditor 调用方式*/
+<%=Html.TextArea("ProductContent", new { @class = "ProductContent" , style = "width:680px;height:300px;"}) %>
+<script>$(function (){ CreateKindEditor(".ProductContent"); });</script>
+
+
+
+<img width="60" height="60" src='<%=_Discount.Pic.JEP2() %>' />数据库字段单张图片
+
+<img width="60" height="60" src='<%=_Wine.Pics.JGetOnePic()%>' />数据库字段多张图片
+
+<select name="Sort" class="Sreq">
+	<%=typeof(DealMvc.Core.Base.E.关于我们类型).JGetEnumOptions(0,"") %>
+</select>
+
+<select class='Search'></select>
+
+<select class='Tab'></select>
+
+/*3 上传单张图片文件*/
+
+		<tr>
+            <td align="right">
+                Logo
+            </td>
+            <td>
+                <input type="file" name="Logo" class="" /><br />
+                <img width="60" height="60" src='<%=ViewData["_Logo"].JEP2() %>' />
+            </td>
+        </tr>
+
+		//写到业务逻辑层
+		Common.Globals.UpFileResult _UpFileResult = Common.Globals.Upload("Logo");
+        if (_UpFileResult.returnerror.Count == 0)
+        {
+            if (_UpFileResult.returnfilename.Count > 0)
+            {
+                m_XiangCun.Logo = _UpFileResult.returnfilename[0].ToString();
+            }
+        }
+        else
+        {
+            throw new DealMvc.Common.ExceptionEx.MyExceptionMessageBox(string.Join("<br/>", (string[])_UpFileResult.returnerror.ToArray(typeof(string))));
+        }
+
+		try
+        {
+            ViewData["_Logo"] = m_XiangCun.Logo;
+        }
+        catch { }
+
+
+
+
+/*4 上传多张图片文件*/
+		<tr>
+            <td align="right">
+                产品图片
+            </td>
+            <td>
+                <div>
+                    <ul>
+                        <%
+                            string[] s = null;
+							object o = ViewData["_ProductPics"];
+                            if (o == null) { s = new string[] { }; }
+                            else { s = (string[])o; }
+                            for (int i = 0; i < s.Length; i++)
+                            {
+                        %>
+                        <li class="fl" style="padding: 5px;">
+                            <img style="border: 2px solid #666;" width="60" height="60" src='<%=s[i] %>' />
+                            <input type="checkbox" checked="checked" name="OldProductPics" value='<%=s[i] %>' />
+                        </li>
+                        <%} %>
+                    </ul>
+                    <div class="cb">
+                    </div>
+                </div>
+                <div class="Files">
+                    <input type="file" name="ProductPics" /><br />
+                </div>
+                <div>
+                    <input type="button" value=" + " class="addFile" />
+                    <input type="button" value=" - " class="cutFile" />
+                </div>
+                <script>
+                    $(function ()
+                    {
+                        $(".addFile").click(function ()
+                        {
+                            $(this).parent().parent().find(".Files").append("<input type=\"file\" name=\"ProductPics\" /><br />");
+                        });
+                        $(".cutFile").click(function ()
+                        {
+                            $(this).parent().parent().find(".Files").find(":file").last().remove();
+                            $(this).parent().parent().find(".Files").find("br").last().remove();
+                        });
+                    });
+                </script>
+            </td>
+        </tr>
+
+
+
+		参数: string ProductPics, string[] OldProductPics,
+
+		//写到业务逻辑层
+		Common.Globals.UpFileResult _UpFileResult = Common.Globals.Upload("ProductPics");
+		if (_UpFileResult.returnerror.Count == 0)
+		{
+			ArrayList _Arr = new ArrayList();
+			if (OldProductPics != null && OldProductPics.Length > 0)
+			{ for (int i = 0; i < OldProductPics.Length; i++) { _Arr.Add(OldProductPics[i]); } }
+			_Arr.AddRange(_UpFileResult.returnfilename);
+			m_Product.ProductPics = string.Join(",", (string[])_Arr.ToArray(typeof(string)));
+		}
+		else
+		{
+			throw new DealMvc.Common.ExceptionEx.MyExceptionMessageBox(string.Join("<br/>", (string[])_UpFileResult.returnerror.ToArray(typeof(string))));
+		}
+
+
+		try
+        {
+            ViewData["_ProductPics"] = m_Product.ProductPics.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+        }
+        catch { }

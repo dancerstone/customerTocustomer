@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>后台管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/App_Themes/Cms/Cms.css" type="text/css" rel="stylesheet" />
+    <script src="/JS/jquery-1.5.1.min.js" type="text/javascript"></script>
+    <script src="/JS/public.js" type="text/javascript"></script>
+    <script src="/JS/Dialog.js" type="text/javascript"></script>
+    <script src="/JS/sM.js" type="text/javascript"></script>
+    <script src="/JS/CmsJVerify.js" type="text/javascript"></script>
+    <script charset="utf-8" src="/KindEditor/kindeditor-min.js" type="text/javascript"></script>
+    <script charset="utf-8" src="/KindEditor/lang/zh_CN.js" type="text/javascript"></script>
+    <script src="/JS/jstip.js" type="text/javascript"></script>
+</head>
+<Jessica:CmsCommonJS ID="CmsCommonJS1" runat="server" />
+<body>
+    <div style="text-align: left;">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+<Jessica:SFrom ID="SFrom1" runat="server" close="false" />
+</html>
+<%Html.RenderPartial("JSBottom"); %>

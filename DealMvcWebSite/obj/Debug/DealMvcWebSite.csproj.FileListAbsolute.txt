@@ -1,0 +1,4 @@
+F:\金蒙早教\DealMvcWebSite\bin\DealMvcWebSite.dll
+F:\金蒙早教\DealMvcWebSite\bin\DealMvcWebSite.pdb
+F:\金蒙早教\DealMvcWebSite\obj\Debug\DealMvcWebSite.dll
+F:\金蒙早教\DealMvcWebSite\obj\Debug\DealMvcWebSite.pdb

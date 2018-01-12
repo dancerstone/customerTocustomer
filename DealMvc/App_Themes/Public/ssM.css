@@ -1,0 +1,12 @@
+﻿/*Alert Css*/
+.Dialog_Facebox_Alert { position: absolute; top: 0; left: 0; z-index: 10009; text-align: left; background: #4a4a4a; color: #555; filter: alpha(opacity=90); opacity: 0.9;border-radius:8px; }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_Popup { position: relative; }
+.Dialog_Facebox_Alert table { border-collapse: collapse; }
+.Dialog_Facebox_Alert td { border-bottom: 0; padding: 0; }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_Bg { }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_TopLeft { }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_TopReight { }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_BottomLeft { }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_BottomReight { }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_Body { padding: 15px 40px; background: #4a4a4a; width: auto; line-height: 24px; font: 16px 'microsoft yahei'; font-weight: 700; color:#fff }
+.Dialog_Facebox_Alert .Dialog_Facebox_Alert_TopLeft, .Dialog_Facebox_Alert .Dialog_Facebox_Alert_TopReight, .Dialog_Facebox_Alert .Dialog_Facebox_Alert_BottomLeft, .Dialog_Facebox_Alert .Dialog_Facebox_Alert_BottomReight { height: 10px; overflow: hidden; padding: 0; width: 10px; }

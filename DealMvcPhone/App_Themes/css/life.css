@@ -1,0 +1,20 @@
+﻿
+.lifeContent { padding-top: 50px; width: 100%; background-color: #191919; }
+.lifeContent .title { width: 100%; min-height: 70px; color: #fff; background: #2b2b2b url(/App_Themes/images/img_speator.png) no-repeat center top; }
+.lifeContent .title div { width: 50%; min-height: 70px; text-align: center; line-height: 70px; }
+.lifeContent .title div.divNow { background: url(/App_Themes/images/img_select.png) repeat-x bottom center; }
+
+.lifeContent .content { padding-left: 3%; }
+.lifeContent .content li { width: 47%; padding-bottom: 15px; float: left; padding-right: 3%; }
+.lifeContent .content li .img img { width: 100%; }
+.lifeContent .content li .author { width: 100%; background-color: #333; }
+.lifeContent .content li .author .headpic { width: 22%; padding-right: 4%; position: relative; }
+.lifeContent .content li .author .headpic img { width: 100%; position: absolute; top: 20px; left: 0%; }
+.lifeContent .content li .author .name { width: 50%; color: #999; margin: 10% 0; padding-left: 27%; }
+.lifeContent .content li .author .praise { width: 15%; min-height: 35px; margin: 8% 4%; }
+.lifeContent .content li .author .praise .icon img { width: 100%; }
+.lifeContent .content li .author .praise span { display: block; color: #999; text-align: center; }
+
+.lifeContent .p_more { background: #222; text-align: center; width: 94%; margin: 5px auto; padding: 5% 0px; border-radius: 5px; }
+
+

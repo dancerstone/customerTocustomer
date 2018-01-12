@@ -1,0 +1,182 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc", "DealMvc\DealMvc.csproj", "{A7C2E437-6F37-4131-A86D-951472FE17D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Common", "DealMvc.Common\DealMvc.Common.csproj", "{6FECBA71-C24B-489F-90F6-0675EE3EDE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Model", "DealMvc.Model\DealMvc.Model.csproj", "{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Orm", "DealMvc.Orm\DealMvc.Orm.csproj", "{9CD97381-4BD9-4895-8F23-59B2E5E7053A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.DBUtility", "DealMvc.DBUtility\DealMvc.DBUtility.csproj", "{0988C62E-247F-471F-A183-DB509C7A3839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Filter", "DealMvc.Filter\DealMvc.Filter.csproj", "{CC754480-D421-4F49-A3CB-92C2315D8BD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Common.Net", "DealMvc.Common.Net\DealMvc.Common.Net.csproj", "{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Timer", "DealMvc.Timer\DealMvc.Timer.csproj", "{91289622-267B-4F04-98BF-D52BE3D29ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Pay", "DealMvc.Pay\DealMvc.Pay.csproj", "{4230B33C-5920-458A-BA12-BB74C9269C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.SendMessage", "DealMvc.SendMessage\DealMvc.SendMessage.csproj", "{6BE83C0D-5925-4755-9626-4E539830582A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.SqlTranEx", "DealMvc.SqlTranEx\DealMvc.SqlTranEx.csproj", "{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.ControllerBase", "DealMvc.ControllerBase\DealMvc.ControllerBase.csproj", "{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.Core", "DealMvc.Core.Base\DealMvc.Core.csproj", "{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.ExceptionEx", "DealMvc.ExceptionEx\DealMvc.ExceptionEx.csproj", "{0081A0BA-80D8-4565-88B4-679477FD2945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.WebCache", "DealMvc.WebCache\DealMvc.WebCache.csproj", "{8DD231B9-FCFB-461D-A983-9D908832E3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvc.LoginAPI", "DealMvc.LoginAPI\DealMvc.LoginAPI.csproj", "{FABBA8F2-4B14-4588-9F9D-6EBBD6C7A386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvcPhone", "DealMvcPhone\DealMvcPhone.csproj", "{C6810D16-E252-45E9-B215-DE9F5E7BB83C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealMvcWebSite", "DealMvcWebSite\DealMvcWebSite.csproj", "{A18616C4-10D0-4876-B43E-AAE91B073EC4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 19
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://server7:8080/tfs/tfs_cdleichi_2014
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DealMvc.Common.Net\\DealMvc.Common.Net.csproj
+		SccProjectName1 = DealMvc.Common.Net
+		SccLocalPath1 = DealMvc.Common.Net
+		SccProjectUniqueName2 = DealMvc.Common\\DealMvc.Common.csproj
+		SccProjectName2 = DealMvc.Common
+		SccLocalPath2 = DealMvc.Common
+		SccProjectUniqueName3 = DealMvc.ControllerBase\\DealMvc.ControllerBase.csproj
+		SccProjectName3 = DealMvc.ControllerBase
+		SccLocalPath3 = DealMvc.ControllerBase
+		SccProjectUniqueName4 = DealMvc.Core.Base\\DealMvc.Core.csproj
+		SccProjectName4 = DealMvc.Core.Base
+		SccLocalPath4 = DealMvc.Core.Base
+		SccProjectUniqueName5 = DealMvc.DBUtility\\DealMvc.DBUtility.csproj
+		SccProjectName5 = DealMvc.DBUtility
+		SccLocalPath5 = DealMvc.DBUtility
+		SccProjectUniqueName6 = DealMvc.ExceptionEx\\DealMvc.ExceptionEx.csproj
+		SccProjectName6 = DealMvc.ExceptionEx
+		SccLocalPath6 = DealMvc.ExceptionEx
+		SccProjectUniqueName7 = DealMvc.Filter\\DealMvc.Filter.csproj
+		SccProjectName7 = DealMvc.Filter
+		SccLocalPath7 = DealMvc.Filter
+		SccProjectUniqueName8 = DealMvc.LoginAPI\\DealMvc.LoginAPI.csproj
+		SccProjectName8 = DealMvc.LoginAPI
+		SccLocalPath8 = DealMvc.LoginAPI
+		SccProjectUniqueName9 = DealMvc.Model\\DealMvc.Model.csproj
+		SccProjectName9 = DealMvc.Model
+		SccLocalPath9 = DealMvc.Model
+		SccProjectUniqueName10 = DealMvc.Orm\\DealMvc.Orm.csproj
+		SccProjectName10 = DealMvc.Orm
+		SccLocalPath10 = DealMvc.Orm
+		SccProjectUniqueName11 = DealMvc.Pay\\DealMvc.Pay.csproj
+		SccProjectName11 = DealMvc.Pay
+		SccLocalPath11 = DealMvc.Pay
+		SccProjectUniqueName12 = DealMvc.SendMessage\\DealMvc.SendMessage.csproj
+		SccProjectName12 = DealMvc.SendMessage
+		SccLocalPath12 = DealMvc.SendMessage
+		SccProjectUniqueName13 = DealMvc.SqlTranEx\\DealMvc.SqlTranEx.csproj
+		SccProjectName13 = DealMvc.SqlTranEx
+		SccLocalPath13 = DealMvc.SqlTranEx
+		SccProjectUniqueName14 = DealMvc.Timer\\DealMvc.Timer.csproj
+		SccProjectName14 = DealMvc.Timer
+		SccLocalPath14 = DealMvc.Timer
+		SccProjectUniqueName15 = DealMvc.WebCache\\DealMvc.WebCache.csproj
+		SccProjectName15 = DealMvc.WebCache
+		SccLocalPath15 = DealMvc.WebCache
+		SccProjectUniqueName16 = DealMvc\\DealMvc.csproj
+		SccProjectName16 = DealMvc
+		SccLocalPath16 = DealMvc
+		SccProjectUniqueName17 = DealMvcPhone\\DealMvcPhone.csproj
+		SccProjectName17 = DealMvcPhone
+		SccLocalPath17 = DealMvcPhone
+		SccProjectUniqueName18 = DealMvcWebSite\\DealMvcWebSite.csproj
+		SccProjectName18 = DealMvcWebSite
+		SccLocalPath18 = DealMvcWebSite
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C2E437-6F37-4131-A86D-951472FE17D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C2E437-6F37-4131-A86D-951472FE17D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C2E437-6F37-4131-A86D-951472FE17D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C2E437-6F37-4131-A86D-951472FE17D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FECBA71-C24B-489F-90F6-0675EE3EDE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FECBA71-C24B-489F-90F6-0675EE3EDE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FECBA71-C24B-489F-90F6-0675EE3EDE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FECBA71-C24B-489F-90F6-0675EE3EDE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD97381-4BD9-4895-8F23-59B2E5E7053A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD97381-4BD9-4895-8F23-59B2E5E7053A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD97381-4BD9-4895-8F23-59B2E5E7053A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD97381-4BD9-4895-8F23-59B2E5E7053A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0988C62E-247F-471F-A183-DB509C7A3839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0988C62E-247F-471F-A183-DB509C7A3839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0988C62E-247F-471F-A183-DB509C7A3839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0988C62E-247F-471F-A183-DB509C7A3839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC754480-D421-4F49-A3CB-92C2315D8BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC754480-D421-4F49-A3CB-92C2315D8BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC754480-D421-4F49-A3CB-92C2315D8BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC754480-D421-4F49-A3CB-92C2315D8BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91289622-267B-4F04-98BF-D52BE3D29ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91289622-267B-4F04-98BF-D52BE3D29ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91289622-267B-4F04-98BF-D52BE3D29ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91289622-267B-4F04-98BF-D52BE3D29ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4230B33C-5920-458A-BA12-BB74C9269C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4230B33C-5920-458A-BA12-BB74C9269C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4230B33C-5920-458A-BA12-BB74C9269C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4230B33C-5920-458A-BA12-BB74C9269C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE83C0D-5925-4755-9626-4E539830582A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE83C0D-5925-4755-9626-4E539830582A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE83C0D-5925-4755-9626-4E539830582A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE83C0D-5925-4755-9626-4E539830582A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0081A0BA-80D8-4565-88B4-679477FD2945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0081A0BA-80D8-4565-88B4-679477FD2945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0081A0BA-80D8-4565-88B4-679477FD2945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0081A0BA-80D8-4565-88B4-679477FD2945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD231B9-FCFB-461D-A983-9D908832E3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD231B9-FCFB-461D-A983-9D908832E3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD231B9-FCFB-461D-A983-9D908832E3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD231B9-FCFB-461D-A983-9D908832E3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABBA8F2-4B14-4588-9F9D-6EBBD6C7A386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABBA8F2-4B14-4588-9F9D-6EBBD6C7A386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABBA8F2-4B14-4588-9F9D-6EBBD6C7A386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABBA8F2-4B14-4588-9F9D-6EBBD6C7A386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6810D16-E252-45E9-B215-DE9F5E7BB83C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6810D16-E252-45E9-B215-DE9F5E7BB83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6810D16-E252-45E9-B215-DE9F5E7BB83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6810D16-E252-45E9-B215-DE9F5E7BB83C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18616C4-10D0-4876-B43E-AAE91B073EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18616C4-10D0-4876-B43E-AAE91B073EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18616C4-10D0-4876-B43E-AAE91B073EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18616C4-10D0-4876-B43E-AAE91B073EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.Common.Net\bin\Debug\DealMvc.Common.Net.dll
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.Common.Net\bin\Debug\DealMvc.Common.Net.pdb
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.Common.Net\obj\Debug\DealMvc.Common.Net.dll
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.Common.Net\obj\Debug\DealMvc.Common.Net.pdb
+F:\X许燎源博物馆\X许燎源博物馆\DealMvc.Common.Net\obj\Debug\DealMvc.Common.Net.csprojResolveAssemblyReference.cache
+F:\金蒙早教\DealMvc.Common.Net\bin\Debug\DealMvc.Common.Net.dll
+F:\金蒙早教\DealMvc.Common.Net\bin\Debug\DealMvc.Common.Net.pdb
+F:\金蒙早教\DealMvc.Common.Net\obj\Debug\DealMvc.Common.Net.dll
+F:\金蒙早教\DealMvc.Common.Net\obj\Debug\DealMvc.Common.Net.pdb

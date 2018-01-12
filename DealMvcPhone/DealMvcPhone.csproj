@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6810D16-E252-45E9-B215-DE9F5E7BB83C}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DealMvcPhone</RootNamespace>
+    <AssemblyName>DealMvcPhone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CommController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerifyCodeImage.ashx.cs">
+      <DependentUpon>VerifyCodeImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\css\Address.css" />
+    <Content Include="App_Themes\css\life.css" />
+    <Content Include="App_Themes\css\Login.css" />
+    <Content Include="App_Themes\css\Main.css" />
+    <Content Include="App_Themes\css\index.css" />
+    <Content Include="App_Themes\css\Member.css" />
+    <Content Include="App_Themes\css\password.css" />
+    <Content Include="App_Themes\css\ssM.css" />
+    <Content Include="App_Themes\error\404.css" />
+    <Content Include="App_Themes\error\a8ui.common.css" />
+    <Content Include="App_Themes\error\error.gif" />
+    <Content Include="App_Themes\error\error_238_238.gif" />
+    <Content Include="App_Themes\error\error_404.jpg" />
+    <Content Include="App_Themes\error\E\back.jpg" />
+    <Content Include="App_Themes\error\E\bg.jpg" />
+    <Content Include="App_Themes\error\E\menu_heng.gif" />
+    <Content Include="App_Themes\error\E\menu_link.jpg" />
+    <Content Include="App_Themes\error\E\nav_bg.jpg" />
+    <Content Include="App_Themes\error\E\nav_shuxian.png" />
+    <Content Include="App_Themes\error\E\p1.jpg" />
+    <Content Include="App_Themes\error\E\sousuo.png" />
+    <Content Include="App_Themes\error\E\yun.jpg" />
+    <Content Include="App_Themes\error\E\yuncai.jpg" />
+    <Content Include="App_Themes\images\20150310_02.png" />
+    <Content Include="App_Themes\images\20150310_03.png" />
+    <Content Include="App_Themes\images\20150310_05.png" />
+    <Content Include="App_Themes\images\20150310_08.png" />
+    <Content Include="App_Themes\images\20150310_11.png" />
+    <Content Include="App_Themes\images\20150310_15.png" />
+    <Content Include="App_Themes\images\20150310_19.png" />
+    <Content Include="App_Themes\images\20150310_22.png" />
+    <Content Include="App_Themes\images\20150310_24.png" />
+    <Content Include="App_Themes\images\20150310_26.png" />
+    <Content Include="App_Themes\images\20150310_28.png" />
+    <Content Include="App_Themes\images\add_b.jpg" />
+    <Content Include="App_Themes\images\combo.png" />
+    <Content Include="App_Themes\images\cut_b.png" />
+    <Content Include="App_Themes\images\fpemailcheck.png" />
+    <Content Include="App_Themes\images\fpemailuncheck.png" />
+    <Content Include="App_Themes\images\fpphonecheck.gif" />
+    <Content Include="App_Themes\images\fpphoneuncheck.gif" />
+    <Content Include="App_Themes\images\full_img.png" />
+    <Content Include="App_Themes\images\img_a1.png" />
+    <Content Include="App_Themes\images\img_a2.png" />
+    <Content Include="App_Themes\images\img_ad_bg.png" />
+    <Content Include="App_Themes\images\img_ad_edit.png" />
+    <Content Include="App_Themes\images\img_car.png" />
+    <Content Include="App_Themes\images\img_car_check.png" />
+    <Content Include="App_Themes\images\img_car_edit.png" />
+    <Content Include="App_Themes\images\img_car_img1.png" />
+    <Content Include="App_Themes\images\img_car_img2.png" />
+    <Content Include="App_Themes\images\img_car_nocheck.png" />
+    <Content Include="App_Themes\images\img_check.png" />
+    <Content Include="App_Themes\images\img_delete.png" />
+    <Content Include="App_Themes\images\img_goback.png" />
+    <Content Include="App_Themes\images\img_home.png" />
+    <Content Include="App_Themes\images\img_l1.png" />
+    <Content Include="App_Themes\images\img_l2.png" />
+    <Content Include="App_Themes\images\img_life_headpic.png" />
+    <Content Include="App_Themes\images\img_location.png" />
+    <Content Include="App_Themes\images\img_location2.png" />
+    <Content Include="App_Themes\images\img_order_del.png" />
+    <Content Include="App_Themes\images\img_select.png" />
+    <Content Include="App_Themes\images\img_select_down.png" />
+    <Content Include="App_Themes\images\img_speator.png" />
+    <Content Include="App_Themes\images\img_speator2.png" />
+    <Content Include="App_Themes\images\img_twocode.png" />
+    <Content Include="App_Themes\images\img_uncheck.png" />
+    <Content Include="App_Themes\images\nimg128.png" />
+    <Content Include="App_Themes\images\nimg128_no.png" />
+    <Content Include="App_Themes\images\nimg69_1.png" />
+    <Content Include="App_Themes\images\nimg69_2.png" />
+    <Content Include="App_Themes\images\nimg69_3.png" />
+    <Content Include="App_Themes\images\nimg69_4.png" />
+    <Content Include="App_Themes\images\nimg69_5.png" />
+    <Content Include="App_Themes\images\no_pic.jpg" />
+    <Content Include="App_Themes\images\null_img.png" />
+    <Content Include="App_Themes\images\p_1.png" />
+    <Content Include="App_Themes\images\p_10.png" />
+    <Content Include="App_Themes\images\p_11.png" />
+    <Content Include="App_Themes\images\p_12.png" />
+    <Content Include="App_Themes\images\p_13.png" />
+    <Content Include="App_Themes\images\p_14.png" />
+    <Content Include="App_Themes\images\p_15.png" />
+    <Content Include="App_Themes\images\p_16.png" />
+    <Content Include="App_Themes\images\p_17.png" />
+    <Content Include="App_Themes\images\p_18.png" />
+    <Content Include="App_Themes\images\p_19.png" />
+    <Content Include="App_Themes\images\p_2.png" />
+    <Content Include="App_Themes\images\p_20.png" />
+    <Content Include="App_Themes\images\p_21.png" />
+    <Content Include="App_Themes\images\p_22.png" />
+    <Content Include="App_Themes\images\P_23.png" />
+    <Content Include="App_Themes\images\p_24.png" />
+    <Content Include="App_Themes\images\p_25.png" />
+    <Content Include="App_Themes\images\p_26.png" />
+    <Content Include="App_Themes\images\p_27.png" />
+    <Content Include="App_Themes\images\p_28.png" />
+    <Content Include="App_Themes\images\p_29.png" />
+    <Content Include="App_Themes\images\p_3.png" />
+    <Content Include="App_Themes\images\p_4.png" />
+    <Content Include="App_Themes\images\p_5.png" />
+    <Content Include="App_Themes\images\p_6.png" />
+    <Content Include="App_Themes\images\p_7.png" />
+    <Content Include="App_Themes\images\p_8.png" />
+    <Content Include="App_Themes\images\p_9.png" />
+    <Content Include="App_Themes\receptionPic\false.png" />
+    <Content Include="App_Themes\receptionPic\true.png" />
+    <Content Include="Global.asax" />
+    <Content Include="JS\CmsJVerify.js" />
+    <Content Include="JS\Dialog.js" />
+    <Content Include="JS\Jcrop\css\Jcrop.gif" />
+    <Content Include="JS\Jcrop\css\jquery.Jcrop.css" />
+    <Content Include="JS\Jcrop\demos\demo_files\demos.css" />
+    <Content Include="JS\Jcrop\demos\demo_files\flowers.jpg" />
+    <Content Include="JS\Jcrop\demos\demo_files\sago.jpg" />
+    <Content Include="JS\Jcrop\demos\demo_files\sagomod.jpg" />
+    <Content Include="JS\Jcrop\demos\demo_files\sagomod.png" />
+    <Content Include="JS\Jcrop\demos\tutorial1.html" />
+    <Content Include="JS\Jcrop\demos\tutorial2.html" />
+    <Content Include="JS\Jcrop\demos\tutorial3.html" />
+    <Content Include="JS\Jcrop\demos\tutorial4.html" />
+    <Content Include="JS\Jcrop\demos\tutorial5.html" />
+    <Content Include="JS\Jcrop\index.html" />
+    <Content Include="JS\Jcrop\js\jquery.Jcrop.js" />
+    <Content Include="JS\Jcrop\js\jquery.Jcrop.min.js" />
+    <Content Include="JS\Jcrop\js\jquery.min.js" />
+    <Content Include="JS\jcweb\DeliveryAddress.js" />
+    <Content Include="JS\jcweb\FindPassword.js" />
+    <Content Include="JS\jcweb\form.js" />
+    <Content Include="JS\jcweb\index.js" />
+    <Content Include="JS\jcweb\LifeShow.js" />
+    <Content Include="JS\jcweb\login.js" />
+    <Content Include="JS\jcweb\member.js" />
+    <Content Include="JS\jcweb\order.js" />
+    <Content Include="JS\jcweb\product.js" />
+    <Content Include="JS\jcweb\PublishLifeEsthetician.js" />
+    <Content Include="JS\jcweb\reg.js" />
+    <Content Include="JS\jcweb\UploadPic_avatar.js" />
+    <Content Include="JS\jquery-1.5.1.min.js" />
+    <Content Include="JS\jstip.js" />
+    <Content Include="JS\JVerify.js" />
+    <Content Include="JS\PCASClass.js" />
+    <Content Include="JS\public.js" />
+    <Content Include="JS\sM.js" />
+    <Content Include="JS\swfupload\handlers.js" />
+    <Content Include="JS\swfupload\handlers2.js" />
+    <Content Include="JS\swfupload\swfupload.js" />
+    <Content Include="JS\swfupload\swfupload.swf" />
+    <Content Include="JS\swfupload\swfuploadbutton.swf" />
+    <Content Include="JS\swfupload\XPButtonNoText_160x22.png" />
+    <Content Include="JS\swfupload\XPButtonNoText_160x222.png" />
+    <Content Include="JS\systemtime\css\jquery-ui.css" />
+    <Content Include="JS\systemtime\jquery-1.8.3.min.js" />
+    <Content Include="JS\systemtime\jquery-ym-datePlugin-0.1.js" />
+    <Content Include="JS\systemtime\jquery.datetimepicker.css" />
+    <Content Include="JS\systemtime\jquery.datetimepicker.js" />
+    <Content Include="JS\tab.js" />
+    <Content Include="JS\UploadGoodsPic.js" />
+    <Content Include="JS\UploadMedia.js" />
+    <Content Include="JS\UploadPic.js" />
+    <Content Include="JS\xly_js\easing.js" />
+    <Content Include="JS\xly_js\form.js" />
+    <Content Include="JS\xly_js\fun.js" />
+    <Content Include="JS\xly_js\jquery-1.7.1.min.js" />
+    <Content Include="JS\xly_js\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="JS\xly_js\jquery.wookmark.js" />
+    <Content Include="JS\xly_js\js.js" />
+    <Content Include="JS\xly_js\png.js" />
+    <Content Include="JS\xly_js\ZoomPic2.js" />
+    <Content Include="UploadFolder\2015-03-20\2015032010542233886397.jpg" />
+    <Content Include="UploadFolder\2015-03-20\2015032011272942387789.png" />
+    <Content Include="UploadFolder\2015-03-20\2015032013104986131484.jpg" />
+    <Content Include="UploadFolder\2015-03-20\2015032013234103808676.jpg" />
+    <Content Include="Views\Main\Car.aspx" />
+    <Content Include="Views\Main\DesignersList.aspx" />
+    <Content Include="Views\Main\EffectDList.aspx" />
+    <Content Include="Views\Main\Index.aspx" />
+    <Content Include="Views\Main\Life.aspx" />
+    <Content Include="Views\Main\LoadLifeList.ascx" />
+    <Content Include="Views\Main\loadproductlist.ascx" />
+    <Content Include="Views\Main\LoadThreeDList.ascx" />
+    <Content Include="Views\Main\Magazine.aspx" />
+    <Content Include="Views\Main\productdetail.aspx" />
+    <Content Include="Views\Main\productlist.aspx" />
+    <Content Include="Views\Main\ThreeDList.aspx" />
+    <Content Include="Views\Member\AEDeliveryAddress.aspx" />
+    <Content Include="Views\Member\DeliveryAddressList.aspx" />
+    <Content Include="Views\Member\Index.aspx" />
+    <Content Include="Views\Member\loadorderlist.ascx" />
+    <Content Include="Views\Member\MemberInfo.aspx" />
+    <Content Include="Views\Member\MyAccountList.aspx" />
+    <Content Include="Views\Member\MyCollection.aspx" />
+    <Content Include="Views\Member\MyOrders.aspx" />
+    <Content Include="Views\Member\OrderDetail.aspx" />
+    <Content Include="Views\Member\OrderIndex.aspx" />
+    <Content Include="Views\Member\OrderPayFailure.aspx" />
+    <Content Include="Views\Member\OrderPaySuccess.aspx" />
+    <Content Include="Views\Member\OrderSubmitFailure.aspx" />
+    <Content Include="Views\Member\OrderSubmitSuccess.aspx" />
+    <Content Include="Views\Member\UpdateLoginPassword.aspx" />
+    <Content Include="Views\Shared\foot.ascx" />
+    <Content Include="Views\Shared\JSBottom.ascx" />
+    <Content Include="Views\User\EmailPassword_Verification.aspx" />
+    <Content Include="Views\User\FindPassword.aspx" />
+    <Content Include="Views\User\Login.aspx" />
+    <Content Include="Views\User\PhonePassword_Verification.aspx" />
+    <Content Include="Views\User\Reg.aspx" />
+    <Content Include="Views\User\UpdatePassword.aspx" />
+    <Content Include="Views\User\UpdatePasswordComplate.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DealMvc.Common.Net\DealMvc.Common.Net.csproj">
+      <Project>{E2C3E8EC-9C08-44D9-8F51-C4CF836F43E9}</Project>
+      <Name>DealMvc.Common.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Common\DealMvc.Common.csproj">
+      <Project>{6FECBA71-C24B-489F-90F6-0675EE3EDE28}</Project>
+      <Name>DealMvc.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.ControllerBase\DealMvc.ControllerBase.csproj">
+      <Project>{5D39F0D2-A827-42D3-93E8-2D459D4D8A02}</Project>
+      <Name>DealMvc.ControllerBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Core.Base\DealMvc.Core.csproj">
+      <Project>{6513616A-3B7E-43F4-AA44-B7BA89AA4DA6}</Project>
+      <Name>DealMvc.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.DBUtility\DealMvc.DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DealMvc.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.ExceptionEx\DealMvc.ExceptionEx.csproj">
+      <Project>{0081A0BA-80D8-4565-88B4-679477FD2945}</Project>
+      <Name>DealMvc.ExceptionEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Filter\DealMvc.Filter.csproj">
+      <Project>{CC754480-D421-4F49-A3CB-92C2315D8BD8}</Project>
+      <Name>DealMvc.Filter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.LoginAPI\DealMvc.LoginAPI.csproj">
+      <Project>{FABBA8F2-4B14-4588-9F9D-6EBBD6C7A386}</Project>
+      <Name>DealMvc.LoginAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Model\DealMvc.Model.csproj">
+      <Project>{EA6F4EBC-2232-4B5A-9548-4F7C663D5B67}</Project>
+      <Name>DealMvc.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Orm\DealMvc.Orm.csproj">
+      <Project>{9CD97381-4BD9-4895-8F23-59B2E5E7053A}</Project>
+      <Name>DealMvc.Orm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Pay\DealMvc.Pay.csproj">
+      <Project>{4230B33C-5920-458A-BA12-BB74C9269C48}</Project>
+      <Name>DealMvc.Pay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.SendMessage\DealMvc.SendMessage.csproj">
+      <Project>{6BE83C0D-5925-4755-9626-4E539830582A}</Project>
+      <Name>DealMvc.SendMessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.SqlTranEx\DealMvc.SqlTranEx.csproj">
+      <Project>{DE8F6543-5B8F-461E-A7C1-83F545CB1FB2}</Project>
+      <Name>DealMvc.SqlTranEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.Timer\DealMvc.Timer.csproj">
+      <Project>{91289622-267B-4F04-98BF-D52BE3D29ADF}</Project>
+      <Name>DealMvc.Timer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealMvc.WebCache\DealMvc.WebCache.csproj">
+      <Project>{8DD231B9-FCFB-461D-A983-9D908832E3AF}</Project>
+      <Name>DealMvc.WebCache</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VerifyCodeImage.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JS\Jcrop\demos\crop.php" />
+    <Content Include="WebError.htm" />
+    <Content Include="Weike.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53868</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
